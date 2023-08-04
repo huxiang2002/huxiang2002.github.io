@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-07-04T06:16:57.730Z</updated>
+  <updated>2023-08-04T08:09:38.249Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://huxiang2002.github.io/2023/07/04/hello-world/"/>
-    <id>https://huxiang2002.github.io/2023/07/04/hello-world/</id>
-    <published>2023-07-04T06:16:57.730Z</published>
-    <updated>2023-07-04T06:16:57.730Z</updated>
+    <title>上海交通大小考研机试——大数运算</title>
+    <link href="https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xiao-kao-yan-ji-shi-da-shu-yun-suan/"/>
+    <id>https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xiao-kao-yan-ji-shi-da-shu-yun-suan/</id>
+    <published>2023-08-04T07:54:24.000Z</published>
+    <updated>2023-08-04T08:09:38.249Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;上海交通大学考研机试——大数运算&quot;&gt;&lt;a href=&quot;#上海交通大学考研机试——大数运算&quot; class=&quot;headerlink&quot; title=&quot;上海交通大学考研机试——大数运算&quot;&gt;&lt;/a&gt;上海交通大学考研机试——大数运算&lt;/h3&gt;&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
     
     
+    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="高精度" scheme="https://huxiang2002.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
   </entry>
   
