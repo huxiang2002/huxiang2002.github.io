@@ -415,6 +415,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
@@ -428,11 +431,141 @@
 <p>第二行输出 $a−b$ 的结果。</p>
 <p>第三行输出 $a×b$ 的结果。</p>
 <p>数据范围<br>$|a|$,$|b|$ &lt; $10^{400}$</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">20000000000000000</span><br><span class="line">4000000000000000</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">24000000000000000</span><br><span class="line">16000000000000000</span><br><span class="line">80000000000000000000000000000000</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><pre class="line-numbers language-none"><code class="language-none">20000000000000000
+4000000000000000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><pre class="line-numbers language-none"><code class="language-none">24000000000000000
+16000000000000000
+80000000000000000000000000000000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <hr>
 <p>从题目的数据范围可以看出我们需要使用高精度算法，分别是：高精度加法，高精度*高精度，高精度/低精度<br>读者若对以上算法不熟悉可以将对应代码模拟一遍，背过即可<br>此题的考察的算法不难。不过需要考察正负号的问题<br>我们可以使用substr函数将读入的字符串从1到末尾截取下来<br>用na,nb保存我们的数字的正负号，可以将情况分为两大类<br>1、符号相同<br>2、符号相反<br>具体情况看代码注释</p>
-<h4 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int cmp(vector&lt;int&gt; A,vector&lt;int&gt; B)//比较函数</span><br><span class="line">{</span><br><span class="line">    if(A.size()&lt;B.size()) return -1;</span><br><span class="line">    if(A.size()&gt;B.size()) return 1;</span><br><span class="line"></span><br><span class="line">    for(int i=A.size()-1;i&gt;=0;i--)</span><br><span class="line">        if(A[i]&lt;B[i]) return -1;</span><br><span class="line">        else if(A[i]&gt;B[i]) return 1;</span><br><span class="line">    return 0;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; add(vector&lt;int&gt; A,vector&lt;int&gt; B)//加法模板</span><br><span class="line">{</span><br><span class="line">    vector&lt;int&gt; C;</span><br><span class="line">    int t=0;</span><br><span class="line">    for(int i=0;i&lt;A.size()||i&lt;B.size()||t;i++)</span><br><span class="line">    {</span><br><span class="line">        if(i&lt;A.size()) t+=A[i];</span><br><span class="line">        if(i&lt;B.size()) t+=B[i];</span><br><span class="line">        C.push_back(t%10);</span><br><span class="line">        t/=10;</span><br><span class="line">    }</span><br><span class="line">    return C;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; sub(vector&lt;int&gt; A,vector&lt;int&gt; B)//减法模板</span><br><span class="line">{</span><br><span class="line">    vector&lt;int&gt; C;</span><br><span class="line">    int t=0;</span><br><span class="line">    for(int i=0;i&lt;A.size();i++)</span><br><span class="line">    {</span><br><span class="line">        t=A[i]-t;</span><br><span class="line">        if(i&lt;B.size()) t-=B[i];</span><br><span class="line">        C.push_back((t+10)%10);</span><br><span class="line">        if(t&lt;0) t=1;</span><br><span class="line">        else t=0;</span><br><span class="line">    }</span><br><span class="line">    while(C.size()&gt;1&amp;&amp;C.back()==0) C.pop_back();</span><br><span class="line">    return C;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; mul(vector&lt;int&gt; A,vector&lt;int&gt; B)//乘法模板</span><br><span class="line">{</span><br><span class="line">    int t=0;</span><br><span class="line">    vector&lt;int&gt; C(A.size()+B.size(),0);</span><br><span class="line">    for(int i=0;i&lt;A.size();i++)</span><br><span class="line">        for(int j=0;j&lt;B.size();j++)</span><br><span class="line">            C[i+j]+=A[i]*B[j];</span><br><span class="line"></span><br><span class="line">    for(int i=0;i&lt;C.size();i++)</span><br><span class="line">    {</span><br><span class="line">        t+=C[i];</span><br><span class="line">        C[i]=t%10;</span><br><span class="line">        t/=10;</span><br><span class="line">    }</span><br><span class="line">    while(C.size()&gt;1&amp;&amp;C.back()==0) C.pop_back();</span><br><span class="line">    return C;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">void print(vector&lt;int&gt; A)//输出</span><br><span class="line">{</span><br><span class="line">    for(int i=A.size()-1;i&gt;=0;i--) cout&lt;&lt;A[i];</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">{</span><br><span class="line">    string a,b;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    int na=1,nb=1;</span><br><span class="line">    if(a[0]=='-') na=-1,a=a.substr(1);//用substr扣掉符号</span><br><span class="line">    if(b[0]=='-') nb=-1,b=b.substr(1);</span><br><span class="line"></span><br><span class="line">    vector&lt;int&gt; A,B;</span><br><span class="line">    for(int i=a.size()-1;i&gt;=0;i--) A.push_back(a[i]-'0');</span><br><span class="line">    for(int i=b.size()-1;i&gt;=0;i--) B.push_back(b[i]-'0');</span><br><span class="line"></span><br><span class="line">    if(na*nb&gt;0)//如果两个符号相同</span><br><span class="line">    {</span><br><span class="line">        if(na&lt;0) cout&lt;&lt;"-";//na&lt;0 nb也&lt;0 相加为"-"</span><br><span class="line">        print(add(A,B));</span><br><span class="line">        bool has_swap=false;//记录是否交换</span><br><span class="line">        if(cmp(A,B)&lt;0)//B较大</span><br><span class="line">        {</span><br><span class="line">            has_swap=true;//交换</span><br><span class="line">            swap(A,B);</span><br><span class="line">            swap(na,nb);</span><br><span class="line">        }</span><br><span class="line">        auto C=sub(A,B);//做减法</span><br><span class="line">        if(na&gt;0&amp;&amp;has_swap||na&lt;0&amp;&amp;!has_swap)</span><br><span class="line">        //第一种情况:两数都大于0 且交换则B较大 A-B&lt;0</span><br><span class="line">        //第二种情况:两数都小于0 且不交换说明去掉符号的A更大则A-B&lt;0</span><br><span class="line">        {</span><br><span class="line">            if(C.size()&gt;1||C[0]&gt;0)//不为0</span><br><span class="line">                cout&lt;&lt;"-";</span><br><span class="line">        }</span><br><span class="line">        print(C);</span><br><span class="line">        print(mul(A,B));</span><br><span class="line">    }</span><br><span class="line">    else   //符号相反</span><br><span class="line">    {</span><br><span class="line">        bool has_swap=false;//记录是否交换</span><br><span class="line">        if(cmp(A,B)&lt;0)//B去掉符号更大交换</span><br><span class="line">        {</span><br><span class="line">            has_swap=true;</span><br><span class="line">            swap(A,B);</span><br><span class="line">            swap(na,nb);</span><br><span class="line">        }</span><br><span class="line">        auto C=sub(A,B);//A+B AB符号为异号 加法变为减法</span><br><span class="line">        if(na&lt;0&amp;&amp;(C.size()&gt;1||C[0]&gt;0)) cout&lt;&lt;"-";//na&lt;0 nb&gt;0且C不为0</span><br><span class="line">        //第一种情况A&gt;0 B&lt;0 且B的绝对值这时交换位置 |B|-A为正数实际A+B为负数</span><br><span class="line">        //第二种情况A&lt;0 B&gt;0 且B的绝对值更小不交唤|A|-B为正数实际A+B为负数</span><br><span class="line">        print(sub(A,B));</span><br><span class="line">        if(na&gt;0&amp;&amp;has_swap||na&lt;0&amp;&amp;!has_swap) cout&lt;&lt;"-";</span><br><span class="line">        //na&gt;0 nb&lt;0 且发生交换原来是na&lt;0,nb&gt;0的减法且|B|较大差为负数。现在为绝对值较大的正数B+|A|</span><br><span class="line">        //na&lt;0 nb&gt;0 且不发生交换原来是na&lt;0,nb&gt;0的减法且|A|较大差为负数，现在为|A|+B</span><br><span class="line">        print(add(A,B));//符号相反的减法可变为加法</span><br><span class="line">        if(a!="0"&amp;&amp;b!="0") cout&lt;&lt;"-";//a,b都不为0</span><br><span class="line">        print(mul(A,B));</span><br><span class="line">    }</span><br><span class="line">    return 0;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h4><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+using namespace std;
+
+int cmp(vector&lt;int&gt; A,vector&lt;int&gt; B)//比较函数
+{
+    if(A.size()&lt;B.size()) return -1;
+    if(A.size()&gt;B.size()) return 1;
+
+    for(int i=A.size()-1;i&gt;=0;i--)
+        if(A[i]&lt;B[i]) return -1;
+        else if(A[i]&gt;B[i]) return 1;
+    return 0;
+}
+
+vector&lt;int&gt; add(vector&lt;int&gt; A,vector&lt;int&gt; B)//加法模板
+{
+    vector&lt;int&gt; C;
+    int t=0;
+    for(int i=0;i&lt;A.size()||i&lt;B.size()||t;i++)
+    {
+        if(i&lt;A.size()) t+=A[i];
+        if(i&lt;B.size()) t+=B[i];
+        C.push_back(t%10);
+        t/=10;
+    }
+    return C;
+}
+
+vector&lt;int&gt; sub(vector&lt;int&gt; A,vector&lt;int&gt; B)//减法模板
+{
+    vector&lt;int&gt; C;
+    int t=0;
+    for(int i=0;i&lt;A.size();i++)
+    {
+        t=A[i]-t;
+        if(i&lt;B.size()) t-=B[i];
+        C.push_back((t+10)%10);
+        if(t&lt;0) t=1;
+        else t=0;
+    }
+    while(C.size()&gt;1&amp;&amp;C.back()==0) C.pop_back();
+    return C;
+}
+
+vector&lt;int&gt; mul(vector&lt;int&gt; A,vector&lt;int&gt; B)//乘法模板
+{
+    int t=0;
+    vector&lt;int&gt; C(A.size()+B.size(),0);
+    for(int i=0;i&lt;A.size();i++)
+        for(int j=0;j&lt;B.size();j++)
+            C[i+j]+=A[i]*B[j];
+
+    for(int i=0;i&lt;C.size();i++)
+    {
+        t+=C[i];
+        C[i]=t%10;
+        t/=10;
+    }
+    while(C.size()&gt;1&amp;&amp;C.back()==0) C.pop_back();
+    return C;
+}
+
+void print(vector&lt;int&gt; A)//输出
+{
+    for(int i=A.size()-1;i&gt;=0;i--) cout&lt;&lt;A[i];
+    cout&lt;&lt;endl;
+}
+
+int main()
+{
+    string a,b;
+    cin&gt;&gt;a&gt;&gt;b;
+    int na=1,nb=1;
+    if(a[0]=='-') na=-1,a=a.substr(1);//用substr扣掉符号
+    if(b[0]=='-') nb=-1,b=b.substr(1);
+
+    vector&lt;int&gt; A,B;
+    for(int i=a.size()-1;i&gt;=0;i--) A.push_back(a[i]-'0');
+    for(int i=b.size()-1;i&gt;=0;i--) B.push_back(b[i]-'0');
+
+    if(na*nb&gt;0)//如果两个符号相同
+    {
+        if(na&lt;0) cout&lt;&lt;"-";//na&lt;0 nb也&lt;0 相加为"-"
+        print(add(A,B));
+        bool has_swap=false;//记录是否交换
+        if(cmp(A,B)&lt;0)//B较大
+        {
+            has_swap=true;//交换
+            swap(A,B);
+            swap(na,nb);
+        }
+        auto C=sub(A,B);//做减法
+        if(na&gt;0&amp;&amp;has_swap||na&lt;0&amp;&amp;!has_swap)
+        //第一种情况:两数都大于0 且交换则B较大 A-B&lt;0
+        //第二种情况:两数都小于0 且不交换说明去掉符号的A更大则A-B&lt;0
+        {
+            if(C.size()&gt;1||C[0]&gt;0)//不为0
+                cout&lt;&lt;"-";
+        }
+        print(C);
+        print(mul(A,B));
+    }
+    else   //符号相反
+    {
+        bool has_swap=false;//记录是否交换
+        if(cmp(A,B)&lt;0)//B去掉符号更大交换
+        {
+            has_swap=true;
+            swap(A,B);
+            swap(na,nb);
+        }
+        auto C=sub(A,B);//A+B AB符号为异号 加法变为减法
+        if(na&lt;0&amp;&amp;(C.size()&gt;1||C[0]&gt;0)) cout&lt;&lt;"-";//na&lt;0 nb&gt;0且C不为0
+        //第一种情况A&gt;0 B&lt;0 且B的绝对值这时交换位置 |B|-A为正数实际A+B为负数
+        //第二种情况A&lt;0 B&gt;0 且B的绝对值更小不交唤|A|-B为正数实际A+B为负数
+        print(sub(A,B));
+        if(na&gt;0&amp;&amp;has_swap||na&lt;0&amp;&amp;!has_swap) cout&lt;&lt;"-";
+        //na&gt;0 nb&lt;0 且发生交换原来是na&lt;0,nb&gt;0的减法且|B|较大差为负数。现在为绝对值较大的正数B+|A|
+        //na&lt;0 nb&gt;0 且不发生交换原来是na&lt;0,nb&gt;0的减法且|A|较大差为负数，现在为|A|+B
+        print(add(A,B));//符号相反的减法可变为加法
+        if(a!="0"&amp;&amp;b!="0") cout&lt;&lt;"-";//a,b都不为0
+        print(mul(A,B));
+    }
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -697,6 +830,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->
