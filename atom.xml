@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-08-04T11:34:48.772Z</updated>
+  <updated>2023-08-06T03:47:19.001Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>清华大学考研机试题——质因数的个数</title>
+    <link href="https://huxiang2002.github.io/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/"/>
+    <id>https://huxiang2002.github.io/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/</id>
+    <published>2023-08-06T03:42:25.000Z</published>
+    <updated>2023-08-06T03:47:19.001Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;求正整数 &lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot;&gt;&lt;svg style=&quot;vertical-align: -0.452ex;&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数学知识" scheme="https://huxiang2002.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>上海交通大学考研机试——大数运算</title>
     <link href="https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/"/>
     <id>https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/</id>
     <published>2023-08-04T07:54:24.000Z</published>
-    <updated>2023-08-04T11:34:48.772Z</updated>
+    <updated>2023-08-06T03:47:35.424Z</updated>
     
     
       
