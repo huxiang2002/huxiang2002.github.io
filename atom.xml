@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-08-06T04:05:54.071Z</updated>
+  <updated>2023-08-08T03:12:35.961Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -17,9 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>浙江大学考研机试题——一端进，两端出</title>
+    <link href="https://huxiang2002.github.io/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/"/>
+    <id>https://huxiang2002.github.io/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/</id>
+    <published>2023-08-08T03:03:42.000Z</published>
+    <updated>2023-08-08T03:12:35.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;给定一个输入受限的双端队列（即一个端点允许插入和删除，另一个端点只允许删除的双端队列）和一个长度为
+&lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="贪心" scheme="https://huxiang2002.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>北京大学机试考研题——神奇的口袋</title>
-    <link href="https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-ji-shi-kao-yan-ti-shen-qi-de-kou-dai/"/>
-    <id>https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-ji-shi-kao-yan-ti-shen-qi-de-kou-dai/</id>
+    <link href="https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/"/>
+    <id>https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/</id>
     <published>2023-08-06T03:58:10.000Z</published>
     <updated>2023-08-06T04:05:54.071Z</updated>
     
@@ -77,16 +106,15 @@
     <link href="https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/"/>
     <id>https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/</id>
     <published>2023-08-04T07:54:24.000Z</published>
-    <updated>2023-08-06T03:47:35.424Z</updated>
+    <updated>2023-08-08T03:07:29.118Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;上海交通大学考研机试大数运算&quot;&gt;上海交通大学考研机试——大数运算&lt;/h3&gt;
-&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
-&lt;p&gt;给定两个整数 &lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;给定两个整数 &lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot;&gt;&lt;svg style=&quot;vertical-align: -0.023ex;&quot;</summary>
         
       
     
