@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-08-08T03:14:48.992Z</updated>
+  <updated>2023-08-09T04:27:25.118Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>西安电子科技大学考研机试题——最长连续公共子序列</title>
+    <link href="https://huxiang2002.github.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/"/>
+    <id>https://huxiang2002.github.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/</id>
+    <published>2023-08-09T04:25:36.000Z</published>
+    <updated>2023-08-09T04:27:25.118Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;输入两个字符串 &lt;span class=&quot;math inline&quot;&gt;&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot;&gt;&lt;svg style=&quot;vertical-align:</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="枚举" scheme="https://huxiang2002.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>浙江大学考研机试题——一端进，两端出</title>
