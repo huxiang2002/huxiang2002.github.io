@@ -3,11 +3,11 @@
   <title>Algorithmic library</title>
   
   <subtitle>Fighting</subtitle>
-  <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
+  <link href="https://www.huxiang.xyz/atom.xml" rel="self"/>
   
-  <link href="https://huxiang2002.github.io/"/>
+  <link href="https://www.huxiang.xyz/"/>
   <updated>2023-08-09T04:27:25.118Z</updated>
-  <id>https://huxiang2002.github.io/</id>
+  <id>https://www.huxiang.xyz/</id>
   
   <author>
     <name>胡想</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>西安电子科技大学考研机试题——最长连续公共子序列</title>
-    <link href="https://huxiang2002.github.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/"/>
-    <id>https://huxiang2002.github.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/</id>
+    <link href="https://www.huxiang.xyz/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/"/>
+    <id>https://www.huxiang.xyz/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/</id>
     <published>2023-08-09T04:25:36.000Z</published>
     <updated>2023-08-09T04:27:25.118Z</updated>
     
@@ -35,19 +35,19 @@
     
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="枚举" scheme="https://huxiang2002.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    <category term="枚举" scheme="https://www.huxiang.xyz/tags/%E6%9E%9A%E4%B8%BE/"/>
     
   </entry>
   
   <entry>
     <title>浙江大学考研机试题——一端进，两端出</title>
-    <link href="https://huxiang2002.github.io/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/"/>
-    <id>https://huxiang2002.github.io/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/</id>
+    <link href="https://www.huxiang.xyz/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/"/>
+    <id>https://www.huxiang.xyz/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/</id>
     <published>2023-08-08T03:03:42.000Z</published>
     <updated>2023-08-08T03:14:48.992Z</updated>
     
@@ -64,19 +64,19 @@
     
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="贪心" scheme="https://huxiang2002.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    <category term="贪心" scheme="https://www.huxiang.xyz/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
   <entry>
     <title>北京大学机试考研题——神奇的口袋</title>
-    <link href="https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/"/>
-    <id>https://huxiang2002.github.io/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/</id>
+    <link href="https://www.huxiang.xyz/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/"/>
+    <id>https://www.huxiang.xyz/2023/08/06/bei-jing-da-xue-kao-yan-ji-shi-ti-shen-qi-de-kou-dai/</id>
     <published>2023-08-06T03:58:10.000Z</published>
     <updated>2023-08-06T04:05:54.071Z</updated>
     
@@ -92,19 +92,19 @@
     
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="动态规划" scheme="https://huxiang2002.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <category term="动态规划" scheme="https://www.huxiang.xyz/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>清华大学考研机试题——质因数的个数</title>
-    <link href="https://huxiang2002.github.io/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/"/>
-    <id>https://huxiang2002.github.io/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/</id>
+    <link href="https://www.huxiang.xyz/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/"/>
+    <id>https://www.huxiang.xyz/2023/08/06/qing-hua-da-xue-kao-yan-ji-shi-ti-zhi-yin-shu-de-ge-shu/</id>
     <published>2023-08-06T03:42:25.000Z</published>
     <updated>2023-08-06T03:47:19.001Z</updated>
     
@@ -120,19 +120,19 @@
     
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="数学知识" scheme="https://huxiang2002.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    <category term="数学知识" scheme="https://www.huxiang.xyz/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>上海交通大学考研机试——大数运算</title>
-    <link href="https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/"/>
-    <id>https://huxiang2002.github.io/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/</id>
+    <link href="https://www.huxiang.xyz/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/"/>
+    <id>https://www.huxiang.xyz/2023/08/04/shang-hai-jiao-tong-da-xue-kao-yan-ji-shi-da-shu-yun-suan/</id>
     <published>2023-08-04T07:54:24.000Z</published>
     <updated>2023-08-08T03:07:29.118Z</updated>
     
@@ -148,12 +148,12 @@
     
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="算法" scheme="https://huxiang2002.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://www.huxiang.xyz/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="高精度" scheme="https://huxiang2002.github.io/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    <category term="高精度" scheme="https://www.huxiang.xyz/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
   </entry>
   
