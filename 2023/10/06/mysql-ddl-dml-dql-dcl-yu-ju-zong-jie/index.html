@@ -4,13 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="北京邮电大学考研机试题——哈夫曼树, Algorithmic library">
-    <meta name="description" content="题目描述
-给定  个权值作为 
-个叶子结点，构造一棵二叉树，若该树的带权路径长度达到最小，称这样的二叉树为最优二叉树，也称为哈夫曼树(Huffman
-Tree)。
-现在，给定 
-个叶子结点的信息，请你构造哈夫曼树，并输出该树的带权路径长度。">
+    <meta name="keywords" content="MySql DDL、DML、DQL、DCL语句总结, Algorithmic library">
+    <meta name="description" content="一、DDL语句
+DDL语句：数据定义语言，用来定义数据库对象(数据库，表，字段)
+(1)数据库操作：
+
+创建数据库：create database [if not exists] 数据库名字 [default
+charset 字符集] [c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +22,7 @@ Tree)。
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>北京邮电大学考研机试题——哈夫曼树 | Algorithmic library</title>
+    <title>MySql DDL、DML、DQL、DCL语句总结 | Algorithmic library</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -454,12 +454,12 @@ mjx-container[display="true"] + br {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">北京邮电大学考研机试题——哈夫曼树</h1>
+                    <h1 class="description center-align post-title">MySql DDL、DML、DQL、DCL语句总结</h1>
                 </div>
             </div>
         </div>
@@ -483,12 +483,12 @@ mjx-container[display="true"] + br {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
                             </a>
                         
-                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                                <span class="chip bg-color">贪心</span>
+                            <a href="/tags/DDL%E3%80%81DML%E3%80%81DQL%E3%80%81DCL/">
+                                <span class="chip bg-color">DDL、DML、DQL、DCL</span>
                             </a>
                         
                     </div>
@@ -499,8 +499,8 @@ mjx-container[display="true"] + br {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
                             </a>
                         
                     </div>
@@ -512,7 +512,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-13
+                    2023-10-06
                 </div>
                 
 
@@ -536,67 +536,168 @@ mjx-container[display="true"] + br {
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="题目描述">题目描述</h3>
-<p>给定 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container></span> 个权值作为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container></span>
-个叶子结点，构造一棵二叉树，若该树的带权路径长度达到最小，称这样的二叉树为最优二叉树，也称为哈夫曼树(Huffman
-Tree)。</p>
-<p>现在，给定 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container></span>
-个叶子结点的信息，请你构造哈夫曼树，并输出该树的带权路径长度。</p>
-<h4 id="相关知识">相关知识：</h4>
-<p>1、路径和路径长度
-在一棵树中，从一个结点往下可以达到的孩子或孙子结点之间的通路，称为路径。通路中分支的数目称为路径长度。若规定根结点的层数为
-<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span>，则从根结点到第 L
-层结点的路径长度为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.438ex" height="1.731ex" role="img" focusable="false" viewBox="0 -683 2403.4 765"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mo" transform="translate(903.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(1903.4,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span>。</p>
-<p>2、结点的权及带权路径长度
-若将树中结点赋给一个有着某种含义的数值，则这个数值称为该结点的权。结点的带权路径长度为：从根结点到该结点之间的路径长度与该结点的权的乘积。</p>
-<p>3、树的带权路径长度
-树的带权路径长度规定为所有叶子结点的带权路径长度之和，记为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="5.611ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 2480 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D44A" d="M436 683Q450 683 486 682T553 680Q604 680 638 681T677 682Q695 682 695 674Q695 670 692 659Q687 641 683 639T661 637Q636 636 621 632T600 624T597 615Q597 603 613 377T629 138L631 141Q633 144 637 151T649 170T666 200T690 241T720 295T759 362Q863 546 877 572T892 604Q892 619 873 628T831 637Q817 637 817 647Q817 650 819 660Q823 676 825 679T839 682Q842 682 856 682T895 682T949 681Q1015 681 1034 683Q1048 683 1048 672Q1048 666 1045 655T1038 640T1028 637Q1006 637 988 631T958 617T939 600T927 584L923 578L754 282Q586 -14 585 -15Q579 -22 561 -22Q546 -22 542 -17Q539 -14 523 229T506 480L494 462Q472 425 366 239Q222 -13 220 -15T215 -19Q210 -22 197 -22Q178 -22 176 -15Q176 -12 154 304T131 622Q129 631 121 633T82 637H58Q51 644 51 648Q52 671 64 683H76Q118 680 176 680Q301 680 313 683H323Q329 677 329 674T327 656Q322 641 318 637H297Q236 634 232 620Q262 160 266 136L501 550L499 587Q496 629 489 632Q483 636 447 637Q428 637 422 639T416 648Q416 650 418 660Q419 664 420 669T421 676T424 680T428 682T436 683Z"></path></g><g data-mml-node="mi" transform="translate(1048,0)"><path data-c="1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></g><g data-mml-node="mi" transform="translate(1799,0)"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g></g></g></svg></mjx-container></span>。</p>
-<h3 id="输入格式">输入格式</h3>
-<p>第一行包含整数 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container></span>，表示叶子结点数量。</p>
-<p>第二行包含 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container></span>
-个整数，表示每个叶子结点的权值。</p>
-<h3 id="输出格式">输出格式</h3>
-<p>输出一个整数，表示生成哈夫曼树的带权路径长度。</p>
-<h3 id="数据范围">数据范围</h3>
-<p><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.312ex;" xmlns="http://www.w3.org/2000/svg" width="13.699ex" height="1.857ex" role="img" focusable="false" viewBox="0 -683 6055.1 821"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mo" transform="translate(777.8,0)"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mi" transform="translate(1833.6,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mo" transform="translate(2999.3,0)"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mn" transform="translate(4055.1,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1500,0)"></path></g></g></g></svg></mjx-container></span>, 叶子结点的权值范围
-<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="6.789ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3000.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path></g><g data-mml-node="mn" transform="translate(278,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(778,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mn" transform="translate(1222.7,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(2722.7,0)"><path data-c="5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></g></g></g></svg></mjx-container></span>。</p>
-<h3 id="输入样例">输入样例：</h3>
-<p>5 1 2 2 5 9</p>
-<h3 id="输出样例">输出样例：</h3>
-<p>37</p>
-<h3 id="思路">思路：</h3>
-<p>每次找到两个最小值加到我们的答案里，可以用小根堆</p>
-<h3 id="代码如下">代码如下：</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;queue&gt;</span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
-    cin<span class="token operator">&gt;&gt;</span>n<span class="token punctuation">;</span>
-    priority_queue<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">,</span>greater<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> heap<span class="token punctuation">;</span><span class="token comment">//定义小根堆</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> x<span class="token punctuation">;</span>
-        cin<span class="token operator">&gt;&gt;</span>x<span class="token punctuation">;</span>
-        heap<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    
-    <span class="token keyword">int</span> res<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">1</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> a<span class="token operator">=</span>heap<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        heap<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> b<span class="token operator">=</span>heap<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        heap<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        res<span class="token operator">+=</span>a<span class="token operator">+</span>b<span class="token punctuation">;</span>
-        heap<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>a<span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    
-    cout<span class="token operator">&lt;&lt;</span>res<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h3 id="一ddl语句">一、DDL语句</h3>
+<p>DDL语句：数据定义语言，用来定义数据库对象(数据库，表，字段)<br>
+(1)数据库操作：</p>
+<ul>
+<li>创建数据库：create database [if not exists] 数据库名字 [default
+charset 字符集] [collate 排序规则];<br>
+</li>
+<li>查询所有数据库：show databases;<br>
+</li>
+<li>查询当前数据库：select database();<br>
+</li>
+<li>删除数据库：drop database [if exists] 数据库名字;<br>
+</li>
+<li>切换数据库：use 数据库名字;</li>
+</ul>
+<p>(2)表操作：</p>
+<ul>
+<li>创建表结构：create table 表名( 字段1 字段1类型 [comment 字段1注释
+],<br>
+字段2 字段2类型 [comment 字段2注释 ],<br>
+字段3 字段3类型 [comment 字段3注释 ],<br>
+......<br>
+字段n 字段n类型 [comment 字段n注释 ]<br>
+) comment 表注释;<br>
+</li>
+<li>查询当前数据库所有表：show tables;<br>
+</li>
+<li>查看指定表的结构：desc 表名;<br>
+</li>
+<li>查询指定表的建表语句：show create table 表名;</li>
+</ul>
+<p>(3)表操作-修改:</p>
+<ul>
+<li>添加字段：alter table 表名 add 字段名 类型(长度) [comment
+注释];<br>
+</li>
+<li>修改数据类型：alter table 表名 modify 字段名 新数据类型(长度);<br>
+</li>
+<li>修改字段名和字段类型：alter table 表名 change 旧字段名 新字段名
+类型(长度) [comment 注释]<br>
+</li>
+<li>删除字段：alter table 表名 drop 字段名<br>
+</li>
+<li>修改表名：alter table 表名 rename to 新表名</li>
+</ul>
+<p>(4)表操作-删除:<br>
+* 删除表：drop table [if exists] 表名 * 删除指定表,
+并重新创建表：truncate table 表名</p>
+<h3 id="二dml语句">二、DML语句</h3>
+<p>(1)添加数据：</p>
+<ul>
+<li>给指定字段添加数据：insert into 表名
+(字段名1，字段名2，...，字段名n) values(值1，值2，...值n)</li>
+<li>给全部字段添加数据：insert into 表名 values(值1，值2，...值n)</li>
+<li>批量添加数据： insert into 表名 (字段名1，字段名2，...，字段名n)
+values(值1，值2，...值n),(值1，值2，...值n)</li>
+</ul>
+<p>(2)修改数据:</p>
+<ul>
+<li>update 表名 set 字段名1=新值1,字段名2=新值2,...[where 条件]</li>
+</ul>
+<p>(3)删除数据：</p>
+<ul>
+<li>delete from 表名 [where 条件]</li>
+</ul>
+<h3 id="三dql语句">三、DQL语句</h3>
+<h4 id="基本语法">基本语法</h4>
+<p>select 字段列表<br>
+from 表名列表<br>
+where 条件列表<br>
+group by 分组字段列表<br>
+having 分组后条件列表<br>
+order by 排序字段列表<br>
+limit 分页参数<br>
+(1)基础查询：</p>
+<ul>
+<li>查询多个字段：select 字段1,字段2,...字段n from 表名</li>
+<li>查询整张表：select * from 表名</li>
+<li>字段设置别名：select 字段1 [as 别名1],字段2 [as 别名2],...字段n [as
+别名n] from 表名</li>
+<li>去除重复记录：select distinct 字段列表 from 表名</li>
+</ul>
+<p>(2)条件查询：</p>
+<ul>
+<li>语法：select 字段列表 form 表名 where 条件</li>
+<li>like(占位符)：模糊匹配(_匹配单个字符, %匹配任意个字符)</li>
+</ul>
+<p>(3)聚合函数：</p>
+<table>
+<thead>
+<tr class="header">
+<th>函数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>count</td>
+<td>统计数量</td>
+</tr>
+<tr class="even">
+<td>max</td>
+<td>最大值</td>
+</tr>
+<tr class="odd">
+<td>min</td>
+<td>最小值</td>
+</tr>
+<tr class="even">
+<td>avg</td>
+<td>平均值</td>
+</tr>
+<tr class="odd">
+<td>sum</td>
+<td>求和</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>语法：select 聚合函数(字段列表) from 表名</li>
+</ul>
+<p>(4)分组查询：</p>
+<ul>
+<li>语法：select 字段列表 from 表名 [where 条件列表] group by 分组字段名
+[having 分组后过滤条件]</li>
+<li>where与having区别 &gt;
+执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组之后对结果进行过滤。
+&gt; 判断条件不同：where不能对聚合函数进行判断，而having可以。 &gt;
+分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义
+&gt; 执行顺序: where &gt; 聚合函数 &gt; having &gt; 支持多字段分组,
+具体语法为 : group by columnA,columnB</li>
+</ul>
+<p>(5)排序查询：</p>
+<ul>
+<li>select 字段列表 from 表名 order by 字段1 排序方式1,字段2
+排序方式2</li>
+<li>排序方式：asc: 升序(默认值) desc: 降序 &gt;
+如果是多字段排序，当第一个字段值相同时，才会根据第二个字段进行排序</li>
+</ul>
+<p>(6)分页查询：</p>
+<ul>
+<li>语法：select 字段列表 from 表名 limit 起始索引,查询记录数 &gt;
+起始索引从0开始，起始索引 = （查询页码 - 1）* 每页显示记录数。 &gt;
+如果查询的是第一页数据，起始索引可以省略，直接简写为 limit 10</li>
+</ul>
+<p>(7)执行顺序：</p>
+<ul>
+<li>from &gt; where &gt; group by &gt; having &gt; select &gt; order by
+&gt; limit</li>
+</ul>
+<h3 id="四dcl语句">四、DCL语句：</h3>
+<ul>
+<li>查询用户：select * from mysql.user</li>
+<li>创建用户：create user '用户名'@'主机名' identified by '密码'</li>
+<li>修改用户密码：alter user '用户名'@'主机名' identified with
+mysql_native_password by '新密码'</li>
+<li>删除用户：drop user '用户名'@'主机名'</li>
+<li>查询权限：show grants for '用户名'@'主机名'</li>
+<li>授予权限：grant 权限列表 on 数据库名.表名 to '用户名'@'主机名'</li>
+<li>撤销权限：revoke 权限列表 on 数据库名.表名 from
+'用户名'@'主机名'</li>
+</ul>
 
                 
             </div>
@@ -623,7 +724,7 @@ Tree)。</p>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://huxiang2002.GitHub.io/2023/08/13/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-ha-fu-man-shu/">https://huxiang2002.GitHub.io/2023/08/13/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-ha-fu-man-shu/</a>
+                    <a href="https://huxiang2002.GitHub.io/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/">https://huxiang2002.GitHub.io/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -661,12 +762,12 @@ Tree)。</p>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
                                 </a>
                             
-                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                                    <span class="chip bg-color">贪心</span>
+                                <a href="/tags/DDL%E3%80%81DML%E3%80%81DQL%E3%80%81DCL/">
+                                    <span class="chip bg-color">DDL、DML、DQL、DCL</span>
                                 </a>
                             
                         </div>
@@ -745,9 +846,10 @@ Tree)。</p>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/">
                     <div class="card-image">
@@ -765,9 +867,9 @@ Tree)。</p>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -780,6 +882,7 @@ Tree)。</p>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -802,13 +905,13 @@ Tree)。</p>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/08/11/zhe-jiang-da-xue-kao-yan-ji-shi-ti-fu-zai-jun-heng/">
+                <a href="/2023/08/13/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-ha-fu-man-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="浙江大学考研机试题——负载均衡">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="北京邮电大学考研机试题——哈夫曼树">
                         
-                        <span class="card-title">浙江大学考研机试题——负载均衡</span>
+                        <span class="card-title">北京邮电大学考研机试题——哈夫曼树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -819,7 +922,7 @@ Tree)。</p>
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-13
                             </span>
                         <span class="publish-author">
                             
@@ -840,8 +943,8 @@ Tree)。</p>
                         <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/DFS/">
-                        <span class="chip bg-color">DFS</span>
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
                     </a>
                     
                 </div>

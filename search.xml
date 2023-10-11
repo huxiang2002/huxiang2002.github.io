@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>MySql DDL、DML、DQL、DCL语句总结</title>
+      <link href="/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/"/>
+      <url>/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一ddl语句">一、DDL语句</h3><p>DDL语句：数据定义语言，用来定义数据库对象(数据库，表，字段)<br>(1)数据库操作：</p><ul><li>创建数据库：create database [if not exists] 数据库名字 [defaultcharset 字符集] [collate 排序规则];<br></li><li>查询所有数据库：show databases;<br></li><li>查询当前数据库：select database();<br></li><li>删除数据库：drop database [if exists] 数据库名字;<br></li><li>切换数据库：use 数据库名字;</li></ul><p>(2)表操作：</p><ul><li>创建表结构：create table 表名( 字段1 字段1类型 [comment 字段1注释],<br>字段2 字段2类型 [comment 字段2注释 ],<br>字段3 字段3类型 [comment 字段3注释 ],<br>......<br>字段n 字段n类型 [comment 字段n注释 ]<br>) comment 表注释;<br></li><li>查询当前数据库所有表：show tables;<br></li><li>查看指定表的结构：desc 表名;<br></li><li>查询指定表的建表语句：show create table 表名;</li></ul><p>(3)表操作-修改:</p><ul><li>添加字段：alter table 表名 add 字段名 类型(长度) [comment注释];<br></li><li>修改数据类型：alter table 表名 modify 字段名 新数据类型(长度);<br></li><li>修改字段名和字段类型：alter table 表名 change 旧字段名 新字段名类型(长度) [comment 注释]<br></li><li>删除字段：alter table 表名 drop 字段名<br></li><li>修改表名：alter table 表名 rename to 新表名</li></ul><p>(4)表操作-删除:<br>* 删除表：drop table [if exists] 表名 * 删除指定表,并重新创建表：truncate table 表名</p><h3 id="二dml语句">二、DML语句</h3><p>(1)添加数据：</p><ul><li>给指定字段添加数据：insert into 表名(字段名1，字段名2，...，字段名n) values(值1，值2，...值n)</li><li>给全部字段添加数据：insert into 表名 values(值1，值2，...值n)</li><li>批量添加数据： insert into 表名 (字段名1，字段名2，...，字段名n)values(值1，值2，...值n),(值1，值2，...值n)</li></ul><p>(2)修改数据:</p><ul><li>update 表名 set 字段名1=新值1,字段名2=新值2,...[where 条件]</li></ul><p>(3)删除数据：</p><ul><li>delete from 表名 [where 条件]</li></ul><h3 id="三dql语句">三、DQL语句</h3><h4 id="基本语法">基本语法</h4><p>select 字段列表<br>from 表名列表<br>where 条件列表<br>group by 分组字段列表<br>having 分组后条件列表<br>order by 排序字段列表<br>limit 分页参数<br>(1)基础查询：</p><ul><li>查询多个字段：select 字段1,字段2,...字段n from 表名</li><li>查询整张表：select * from 表名</li><li>字段设置别名：select 字段1 [as 别名1],字段2 [as 别名2],...字段n [as别名n] from 表名</li><li>去除重复记录：select distinct 字段列表 from 表名</li></ul><p>(2)条件查询：</p><ul><li>语法：select 字段列表 form 表名 where 条件</li><li>like(占位符)：模糊匹配(_匹配单个字符, %匹配任意个字符)</li></ul><p>(3)聚合函数：</p><table><thead><tr class="header"><th>函数</th><th>功能</th></tr></thead><tbody><tr class="odd"><td>count</td><td>统计数量</td></tr><tr class="even"><td>max</td><td>最大值</td></tr><tr class="odd"><td>min</td><td>最小值</td></tr><tr class="even"><td>avg</td><td>平均值</td></tr><tr class="odd"><td>sum</td><td>求和</td></tr></tbody></table><ul><li>语法：select 聚合函数(字段列表) from 表名</li></ul><p>(4)分组查询：</p><ul><li>语法：select 字段列表 from 表名 [where 条件列表] group by 分组字段名[having 分组后过滤条件]</li><li>where与having区别 &gt;执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组之后对结果进行过滤。&gt; 判断条件不同：where不能对聚合函数进行判断，而having可以。 &gt;分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义&gt; 执行顺序: where &gt; 聚合函数 &gt; having &gt; 支持多字段分组,具体语法为 : group by columnA,columnB</li></ul><p>(5)排序查询：</p><ul><li>select 字段列表 from 表名 order by 字段1 排序方式1,字段2排序方式2</li><li>排序方式：asc: 升序(默认值) desc: 降序 &gt;如果是多字段排序，当第一个字段值相同时，才会根据第二个字段进行排序</li></ul><p>(6)分页查询：</p><ul><li>语法：select 字段列表 from 表名 limit 起始索引,查询记录数 &gt;起始索引从0开始，起始索引 = （查询页码 - 1）* 每页显示记录数。 &gt;如果查询的是第一页数据，起始索引可以省略，直接简写为 limit 10</li></ul><p>(7)执行顺序：</p><ul><li>from &gt; where &gt; group by &gt; having &gt; select &gt; order by&gt; limit</li></ul><h3 id="四dcl语句">四、DCL语句：</h3><ul><li>查询用户：select * from mysql.user</li><li>创建用户：create user '用户名'@'主机名' identified by '密码'</li><li>修改用户密码：alter user '用户名'@'主机名' identified withmysql_native_password by '新密码'</li><li>删除用户：drop user '用户名'@'主机名'</li><li>查询权限：show grants for '用户名'@'主机名'</li><li>授予权限：grant 权限列表 on 数据库名.表名 to '用户名'@'主机名'</li><li>撤销权限：revoke 权限列表 on 数据库名.表名 from'用户名'@'主机名'</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+            <tag> DDL、DML、DQL、DCL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>北京邮电大学考研机试题——哈夫曼树</title>
       <link href="/2023/08/13/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-ha-fu-man-shu/"/>
       <url>/2023/08/13/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-ha-fu-man-shu/</url>

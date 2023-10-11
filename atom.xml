@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-08-13T07:26:48.749Z</updated>
+  <updated>2023-10-11T08:53:17.069Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySql DDL、DML、DQL、DCL语句总结</title>
+    <link href="https://huxiang2002.github.io/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/"/>
+    <id>https://huxiang2002.github.io/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/</id>
+    <published>2023-10-06T04:44:49.000Z</published>
+    <updated>2023-10-11T08:53:17.069Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一ddl语句&quot;&gt;一、DDL语句&lt;/h3&gt;
+&lt;p&gt;DDL语句：数据定义语言，用来定义数据库对象(数据库，表，字段)&lt;br&gt;
+(1)数据库操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建数据库：create database [if not exists] 数据库名字</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="https://huxiang2002.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+    <category term="mysql" scheme="https://huxiang2002.github.io/tags/mysql/"/>
+    
+    <category term="DDL、DML、DQL、DCL" scheme="https://huxiang2002.github.io/tags/DDL%E3%80%81DML%E3%80%81DQL%E3%80%81DCL/"/>
+    
+  </entry>
   
   <entry>
     <title>北京邮电大学考研机试题——哈夫曼树</title>
