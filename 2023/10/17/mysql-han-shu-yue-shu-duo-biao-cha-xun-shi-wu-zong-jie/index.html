@@ -4,16 +4,31 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="西安电子科技大学考研机试题——最长连续公共子序列, Algorithmic library">
-    <meta name="description" content="题目描述
-输入两个字符串 。
-输出最长连续公共子串长度和最长连续公共子串。
-输入格式
-一行，两个字符串 ，用空格隔开。
-输出格式
-第一行输出最长连续公共子串的长度
-第二行输出最长连续公共子串。如果不唯一，则输出  中的最后一个。
-数据范围
+    <meta name="keywords" content="MySql---函数,约束,多表查询,事务总结, Algorithmic library">
+    <meta name="description" content="一、函数
+(1)字符串函数：
+
+
+
+
+
+
+
+函数
+功能
+
+
+
+
+concat(S1,S2,...Sn)
+字符串拼接，将S1，S2，... Sn拼接成一个字符串
+
+
+lower(str)
+将字符串str全部转为小写
+
+
+upper(str)
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -26,7 +41,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>西安电子科技大学考研机试题——最长连续公共子序列 | Algorithmic library</title>
+    <title>MySql---函数,约束,多表查询,事务总结 | Algorithmic library</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -458,12 +473,12 @@ mjx-container[display="true"] + br {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">西安电子科技大学考研机试题——最长连续公共子序列</h1>
+                    <h1 class="description center-align post-title">MySql---函数,约束,多表查询,事务总结</h1>
                 </div>
             </div>
         </div>
@@ -487,12 +502,12 @@ mjx-container[display="true"] + br {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
                             </a>
                         
-                            <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                                <span class="chip bg-color">枚举</span>
+                            <a href="/tags/%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BA%A6%E6%9D%9F%EF%BC%8C%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%8C%E4%BA%8B%E5%8A%A1%E6%80%BB%E7%BB%93/">
+                                <span class="chip bg-color">函数，约束，多表查询，事务总结</span>
                             </a>
                         
                     </div>
@@ -503,8 +518,8 @@ mjx-container[display="true"] + br {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
                             </a>
                         
                     </div>
@@ -516,7 +531,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-09
+                    2023-10-17
                 </div>
                 
 
@@ -540,56 +555,418 @@ mjx-container[display="true"] + br {
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="题目描述">题目描述</h3>
-<p>输入两个字符串 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="5.391ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 2382.7 860"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(469,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(969,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(1413.7,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(1882.7,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container></span>。</p>
-<p>输出最长连续公共子串长度和最长连续公共子串。</p>
-<h3 id="输入格式">输入格式</h3>
-<p>一行，两个字符串 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="5.391ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 2382.7 860"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(469,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(969,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(1413.7,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(1882.7,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container></span>，用空格隔开。</p>
-<h3 id="输出格式">输出格式</h3>
-<p>第一行输出最长连续公共子串的长度</p>
-<p>第二行输出最长连续公共子串。如果不唯一，则输出 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="2.192ex" height="1.529ex" role="img" focusable="false" viewBox="0 -666 969 676"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(469,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span> 中的最后一个。</p>
-<h3 id="数据范围">数据范围</h3>
-<p><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex;" xmlns="http://www.w3.org/2000/svg" width="18.466ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 8161.8 999"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(777.8,0)"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mo" transform="translate(1833.6,0) translate(0 -0.5)"><path data-c="7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path></g><g data-mml-node="mi" transform="translate(2111.6,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(2580.6,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(3080.6,0) translate(0 -0.5)"><path data-c="7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path></g><g data-mml-node="mo" transform="translate(3358.6,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mo" transform="translate(3803.2,0) translate(0 -0.5)"><path data-c="7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path></g><g data-mml-node="mi" transform="translate(4081.2,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mn" transform="translate(4550.2,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mo" transform="translate(5050.2,0) translate(0 -0.5)"><path data-c="7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path></g><g data-mml-node="mo" transform="translate(5606,0)"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mn" transform="translate(6661.8,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container></span>
-数据保证至少存在一个连续公共子串。</p>
-<h3 id="输入样例">输入样例：</h3>
-<pre class="line-numbers language-none"><code class="language-none">abcdefg qwercdefiok<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="输出样例">输出样例：</h3>
-<pre class="line-numbers language-none"><code class="language-none">4
-cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>找到a,b两个字符串的最小长度，枚举最小长度到1，由于“如果不唯一，则输出s1中的最后一个”。所以我们从后往前枚举每次len个长度的字符串。</p>
-<h3 id="代码如下">代码如下</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstring&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm&gt;</span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    string a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
-    cin<span class="token operator">&gt;&gt;</span>a<span class="token operator">&gt;&gt;</span>b<span class="token punctuation">;</span>
-    string ans<span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> len<span class="token operator">=</span><span class="token function">min</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>b<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>len<span class="token operator">&gt;=</span><span class="token number">1</span><span class="token punctuation">;</span>len<span class="token operator">--</span><span class="token punctuation">)</span><span class="token comment">//匹配的长度</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>len<span class="token punctuation">;</span>i<span class="token operator">&gt;=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>b<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>len<span class="token punctuation">;</span>j<span class="token operator">&gt;=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                string s1<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>len<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                string s2<span class="token operator">=</span>b<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>j<span class="token punctuation">,</span>len<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>s1<span class="token operator">==</span>s2<span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    ans<span class="token operator">=</span>s1<span class="token punctuation">;</span>
-                    <span class="token keyword">break</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>ans<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>ans<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    cout<span class="token operator">&lt;&lt;</span>ans<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    cout<span class="token operator">&lt;&lt;</span>ans<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h3 id="一函数">一、函数</h3>
+<p>(1)字符串函数：</p>
+<table>
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>函数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>concat(S1,S2,...Sn)</td>
+<td>字符串拼接，将S1，S2，... Sn拼接成一个字符串</td>
+</tr>
+<tr class="even">
+<td>lower(str)</td>
+<td>将字符串str全部转为小写</td>
+</tr>
+<tr class="odd">
+<td>upper(str)</td>
+<td>将字符串str全部转为大写</td>
+</tr>
+<tr class="even">
+<td>lpad(str,n,pad)</td>
+<td>左填充，用字符串pad对str的左边进行填充，达到n个字符串长度</td>
+</tr>
+<tr class="odd">
+<td>rpad(str,n,pad)</td>
+<td>右填充，用字符串pad对str的右边进行填充，达到n个字符串长度</td>
+</tr>
+<tr class="even">
+<td>trim(str)</td>
+<td>去掉字符串头部和尾部的空格</td>
+</tr>
+<tr class="odd">
+<td>substring(str,start,len)</td>
+<td>返回从字符串str从start位置起的len个长度的字符串</td>
+</tr>
+</tbody>
+</table>
+<p>(2)数值函数:</p>
+<table>
+<thead>
+<tr class="header">
+<th>函数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ceil(x)</td>
+<td>向上取整</td>
+</tr>
+<tr class="even">
+<td>floor(x)</td>
+<td>向下取整</td>
+</tr>
+<tr class="odd">
+<td>mod(x,y)</td>
+<td>返回x/y的模</td>
+</tr>
+<tr class="even">
+<td>rand()</td>
+<td>返回0~1内的随机数</td>
+</tr>
+<tr class="odd">
+<td>round(x,y)</td>
+<td>求参数x的四舍五入的值，保留y位小数</td>
+</tr>
+</tbody>
+</table>
+<p>(3)日期函数:</p>
+<table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>函数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>curdate()</td>
+<td>返回当前日期</td>
+</tr>
+<tr class="even">
+<td>curtimr()</td>
+<td>返回当前时间</td>
+</tr>
+<tr class="odd">
+<td>now()</td>
+<td>返回当前日期和时间</td>
+</tr>
+<tr class="even">
+<td>year(date)</td>
+<td>获取指定date的年份</td>
+</tr>
+<tr class="odd">
+<td>mouth(date)</td>
+<td>获取指定date的月份</td>
+</tr>
+<tr class="even">
+<td>day(date)</td>
+<td>获取指定date的日期</td>
+</tr>
+<tr class="odd">
+<td>date_add(date,interval,exprtype)</td>
+<td>返回一个日期/时间值加上一个时间间隔expr后的时间值</td>
+</tr>
+<tr class="even">
+<td>datediff</td>
+<td>返回起始时间date1 和 结束时间date2之间的天数</td>
+</tr>
+</tbody>
+</table>
+<p>(4)流程函数:</p>
+<table>
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>函数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>if(value,t,f)</td>
+<td>如果value为true，则返回t，否则返回f</td>
+</tr>
+<tr class="even">
+<td>ifnull(value1 , value2)</td>
+<td>如果value1不为空，返回value1，否则返回value2</td>
+</tr>
+<tr class="odd">
+<td>case where [ vall ] then [ res1 ]...else [ default ] end</td>
+<td>如果val1为true，返回res1，... 否则返回default默认值</td>
+</tr>
+<tr class="even">
+<td>case [ expr ] where [ vall ] then [ res1 ]...else [ default ]
+end</td>
+<td>如果expr的值等于val1，返回res1，... 否则返回default默认值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="二约束">二、约束</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 31%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>约束</th>
+<th>描述</th>
+<th>关键字</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>非空约束</td>
+<td>限制该字段的数据不能为null</td>
+<td>not null</td>
+</tr>
+<tr class="even">
+<td>唯一约束</td>
+<td>保证该字段的所有数据都是唯一、不重复的</td>
+<td>unique</td>
+</tr>
+<tr class="odd">
+<td>主键约束</td>
+<td>主键是一行数据的唯一标识，要求非空且唯一</td>
+<td>primary key</td>
+</tr>
+<tr class="even">
+<td>默认约束</td>
+<td>保存数据时，如果未指定该字段的值，则采用默认值</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>检查约束</td>
+<td>保证字段值满足某一个条件</td>
+<td>check</td>
+</tr>
+<tr class="even">
+<td>外键约束</td>
+<td>用来让两张表的数据之间建立连接，保证数据的一致性和完整性</td>
+<td>foreign key</td>
+</tr>
+</tbody>
+</table>
+<h4 id="语法">语法：</h4>
+<ul>
+<li>创建表时： create table 表名( 字段名 数据类型, ... [ constraint ] [
+外键名称 ] foreign key (外键字段名) references 主表 (主表列名) )</li>
+<li>修改表时：alter table 表名 add constraint 外键名称 foreign key
+(外键字段名) references 主表 (主表列名)</li>
+<li>删除外键：alter table 表名 drop foreign key 外键名称</li>
+</ul>
+<h4 id="删除更新行为">删除/更新行为：</h4>
+<table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>行为</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>no action</td>
+<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。
+(与 restrict 一致) 默认行为</td>
+</tr>
+<tr class="even">
+<td>restrict</td>
+<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。
+(与 no action 一致) 默认行为</td>
+</tr>
+<tr class="odd">
+<td>cascade</td>
+<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有，则也删除/更新外键在子表中的记录。</td>
+</tr>
+<tr class="even">
+<td>set null</td>
+<td>当在父表中删除对应记录时，首先检查该记录是否有对应外键，如果有则设置子表中该外键值为null（这就要求该外键允许取null）。</td>
+</tr>
+<tr class="odd">
+<td>set default</td>
+<td>父表有变更时，子表将外键列设置成一个默认的值 (innodb不支持)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="具体语法">具体语法：</h4>
+<ul>
+<li>alter table 表名 add constraint 外键名称 foreign key (外键字段名)
+references 主表 (主表列名) on update cascade on delete cascade;</li>
+</ul>
+<h3 id="三多表查询">三、多表查询</h3>
+<h4 id="分类">分类：</h4>
+<ul>
+<li>连接查询
+<ul>
+<li>内连接：相当于查询A、B交集部分数据</li>
+<li>外连接：
+<ul>
+<li>左外连接：查询左表所有数据，以及两张表交集部分数据</li>
+<li>右外连接：查询右表所有数据，以及两张表交集部分数据</li>
+<li>自连接：当前表与自身的连接查询，自连接必须使用表别名</li>
+</ul></li>
+</ul></li>
+<li>子查询</li>
+</ul>
+<p>(1)内连接:</p>
+<ul>
+<li>隐式内连接：select 字段列表 from 表1,表2 where 条件 ...</li>
+<li>显式内连接：select 字段列表 from 表1 [ inner ] join 表2 on
+连接条件...;
+&gt;注意事项:一旦为表起了别名，就不能再使用表名来指定对应的字段了，此时只能够使用别名来指定字段。</li>
+</ul>
+<p>(2)外连接：</p>
+<ul>
+<li>左外连接：select 字段列表 from 表1 left [ outer ] join 表2 on
+条件...;
+&gt;左外连接相当于查询表1(左表)的所有数据，当然也包含表1和表2交集部分的数据。</li>
+<li>右外连接：select 字段列表 from 表1 right [ outer ] join 表2 on
+条件...;
+&gt;右外连接相当于查询表2(右表)的所有数据，当然也包含表1和表2交集部分的数据</li>
+</ul>
+<blockquote>
+<p>注意事项：
+左外连接和右外连接是可以相互替换的，只需要调整在连接查询时SQL中，表结构的先后顺序就可以了。而我们在日常开发使用时，更偏向于左外连接。</p>
+</blockquote>
+<p>(3)自连接：<br>
+自连接查询，顾名思义，就是自己连接自己，也就是把一张表连接查询多次。</p>
+<ul>
+<li>select 字段列表 from 表a 别名a join 表a 别名b on 条件...;
+&gt;注意事项:
+在自连接查询中，必须要为表起别名，要不然我们不清楚所指定的条件、返回的字段，到底是哪一张表的字段。</li>
+</ul>
+<p>(4)联合查询：<br>
+对于union查询，就是把多次查询的结果合并起来，形成一个新的查询结果集。</p>
+<ul>
+<li>selete 字段列表 from 表A ... union [ all ] selete 字段列表 from
+表B...
+&gt;对于联合查询的多张表的列数必须保持一致，字段类型也需要保持一致。
+&gt;union all 会将全部的数据直接合并在一起，union
+会对合并之后的数据去重。</li>
+</ul>
+<p>(5)子查询<br>
+SQL语句中嵌套SELECT语句，称为嵌套查询，又称子查询。</p>
+<h4 id="标量子查询子查询结果为单个值">标量子查询（子查询结果为单个值）：</h4>
+<p>子查询返回的结果是单个值（数字、字符串、日期等）。(如：select id from
+dept where name = '销售部';)</p>
+<h4 id="列子查询子查询结果为一列">列子查询(子查询结果为一列)：</h4>
+<p>常用的操作符：in 、not in 、 any 、some 、 all</p>
+<table>
+<thead>
+<tr class="header">
+<th>操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>in</td>
+<td>在指定的集合范围之内，多选一</td>
+</tr>
+<tr class="even">
+<td>not in</td>
+<td>不在指定的集合范围之内</td>
+</tr>
+<tr class="odd">
+<td>any</td>
+<td>子查询返回列表中，有任意一个满足即可</td>
+</tr>
+<tr class="even">
+<td>some</td>
+<td>与any等同，使用some的地方都可以使用any</td>
+</tr>
+<tr class="odd">
+<td>all</td>
+<td>子查询返回列表的所有值都必须满足</td>
+</tr>
+</tbody>
+</table>
+<h4 id="行子查询子查询结果为一行">行子查询(子查询结果为一行)：</h4>
+<p>子查询返回的结果是一行（可以是多列），这种子查询称为行子查询。<br>
+常用的操作符：= 、&lt;&gt; 、in 、not in</p>
+<h4 id="表子查询子查询结果为多行多列">表子查询(子查询结果为多行多列):</h4>
+<p>子查询返回的结果是多行多列，这种子查询称为表子查询。<br>
+常用的操作符:in</p>
+<blockquote>
+<p>根据子查询位置，分为：<br>
+A. where之后<br>
+B. from之后<br>
+C. select之后</p>
+</blockquote>
+<h3 id="四事务">四、事务：</h3>
+<p>事务
+是一组操作的集合，它是一个不可分割的工作单位，事务会把所有的操作作为一个整体一起向系统提交或撤销操作请求，即这些操作要么同时成功，要么同时失败。</p>
+<p>控制事务一: * 查看事务提交方式 ：selete @<span class="citation" data-cites="autocommit">@autocommit</span> ; * 设置事务提交方式 : set
+@<span class="citation" data-cites="autocommit">@autocommit</span> = 0
+;(1是自动，0是手动) * 提交事务：commit; * 回滚事务:rollback;
+&gt;注意：上述的这种方式，我们是修改了事务的自动提交行为,
+把默认的自动提交修改为了手动提交, 此时我们执行的DML语句都不会提交,
+需要手动的执行commit进行提交。</p>
+<p>控制事务二: * 开启事务：start transaction 或 begin * 提交事务：commit
+* 回滚事务：rollback</p>
+<h4 id="事务四大特性">事务四大特性</h4>
+<ul>
+<li>原子性（Atomicity）：事务是不可分割的最小操作单元，要么全部成功，要么全部失败。</li>
+<li>一致性（Consistency）：事务完成时，必须使所有的数据都保持一致状态。</li>
+<li>隔离性（Isolation）：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行。</li>
+<li>持久性（Durability）：事务一旦提交或回滚，它对数据库中的数据的改变就是永久的。</li>
+</ul>
+<h4 id="事务隔离级别">事务隔离级别</h4>
+<table>
+<thead>
+<tr class="header">
+<th>隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Read uncommitted</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr class="even">
+<td>Read committed</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr class="odd">
+<td>Repeatable Read(默认)</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr class="even">
+<td>Serializable</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>查看事务隔离级别：selete @<span class="citation" data-cites="transaction_isolation">@transaction_isolation</span></li>
+<li>设置事务隔离级别：set [ session ] [ global] transaction isolation
+level 隔离级别
+&gt;注意：事务隔离级别越高，数据越安全，但是性能越低。</li>
+</ul>
 
                 
             </div>
@@ -616,7 +993,7 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://huxiang2002.GitHub.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/">https://huxiang2002.GitHub.io/2023/08/09/xi-an-dian-zi-ke-ji-da-xue-kao-yan-ji-shi-ti-zui-chang-lian-xu-gong-gong-zi-xu-lie/</a>
+                    <a href="https://huxiang2002.GitHub.io/2023/10/17/mysql-han-shu-yue-shu-duo-biao-cha-xun-shi-wu-zong-jie/">https://huxiang2002.GitHub.io/2023/10/17/mysql-han-shu-yue-shu-duo-biao-cha-xun-shi-wu-zong-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -654,12 +1031,12 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
                                 </a>
                             
-                                <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                                    <span class="chip bg-color">枚举</span>
+                                <a href="/tags/%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BA%A6%E6%9D%9F%EF%BC%8C%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%8C%E4%BA%8B%E5%8A%A1%E6%80%BB%E7%BB%93/">
+                                    <span class="chip bg-color">函数，约束，多表查询，事务总结</span>
                                 </a>
                             
                         </div>
@@ -738,17 +1115,18 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/08/10/bei-jing-you-dian-da-xue-kao-yan-ji-shi-ti-er-jin-zhi/">
+                <a href="/2023/10/17/mysql-han-shu-yue-shu-duo-biao-cha-xun-shi-wu-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="北京邮电大学考研机试题——二进制">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="MySql---函数,约束,多表查询,事务总结">
                         
-                        <span class="card-title">北京邮电大学考研机试题——二进制</span>
+                        <span class="card-title">MySql---函数,约束,多表查询,事务总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -758,30 +1136,31 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
                     </a>
                     
-                    <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/">
-                        <span class="chip bg-color">位运算</span>
+                    <a href="/tags/%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BA%A6%E6%9D%9F%EF%BC%8C%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%8C%E4%BA%8B%E5%8A%A1%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">函数，约束，多表查询，事务总结</span>
                     </a>
                     
                 </div>
@@ -795,13 +1174,13 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/08/08/zhe-jiang-da-xue-kao-yan-ji-shi-ti-yi-duan-jin-liang-duan-chu/">
+                <a href="/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="浙江大学考研机试题——一端进，两端出">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="MySql DDL、DML、DQL、DCL语句总结">
                         
-                        <span class="card-title">浙江大学考研机试题——一端进，两端出</span>
+                        <span class="card-title">MySql DDL、DML、DQL、DCL语句总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -812,14 +1191,14 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
                                 </a>
                             
                             
@@ -829,12 +1208,12 @@ cdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
                     </a>
                     
-                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
-                        <span class="chip bg-color">贪心</span>
+                    <a href="/tags/DDL%E3%80%81DML%E3%80%81DQL%E3%80%81DCL/">
+                        <span class="chip bg-color">DDL、DML、DQL、DCL</span>
                     </a>
                     
                 </div>
