@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-10-17T09:40:55.691Z</updated>
+  <updated>2023-12-02T10:37:58.342Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySql-存储引擎和索引总结</title>
+    <link href="https://huxiang2002.github.io/2023/12/02/mysql-cun-chu-yin-qing-he-suo-yin-zong-jie/"/>
+    <id>https://huxiang2002.github.io/2023/12/02/mysql-cun-chu-yin-qing-he-suo-yin-zong-jie/</id>
+    <published>2023-12-02T07:58:41.000Z</published>
+    <updated>2023-12-02T10:37:58.342Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;存储引擎&quot;&gt;存储引擎&lt;/h3&gt;
+&lt;p&gt;存储引擎就是存储数据、建立索引、更新/查询数据等技术的实现方式</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="https://huxiang2002.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+    <category term="mysql" scheme="https://huxiang2002.github.io/tags/mysql/"/>
+    
+    <category term="存储引擎" scheme="https://huxiang2002.github.io/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/"/>
+    
+    <category term="索引" scheme="https://huxiang2002.github.io/tags/%E7%B4%A2%E5%BC%95/"/>
+    
+  </entry>
   
   <entry>
     <title>MySql---函数,约束,多表查询,事务总结</title>
