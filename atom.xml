@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-12-02T10:37:58.342Z</updated>
+  <updated>2023-12-03T02:28:21.871Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS-web apis-操作元素内容和事件总结</title>
+    <link href="https://huxiang2002.github.io/2023/12/03/js-web-apis-cao-zuo-yuan-su-nei-rong-he-shi-jian-zong-jie/"/>
+    <id>https://huxiang2002.github.io/2023/12/03/js-web-apis-cao-zuo-yuan-su-nei-rong-he-shi-jian-zong-jie/</id>
+    <published>2023-12-03T01:01:34.000Z</published>
+    <updated>2023-12-03T02:28:21.871Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;dom&quot;&gt;DOM&lt;/h3&gt;
+&lt;p&gt;DOM（Document Object Model）是将整个 HTML
+文档的每一个标签元素视为一个对象，这个对象下包含了许多的属性和方法，通过操作这些属性或者调用这些方法实现对
+HTML</summary>
+        
+      
+    
+    
+    
+    <category term="JS" scheme="https://huxiang2002.github.io/categories/JS/"/>
+    
+    
+    <category term="-JS -web apis" scheme="https://huxiang2002.github.io/tags/JS-web-apis/"/>
+    
+  </entry>
   
   <entry>
     <title>MySql-存储引擎和索引总结</title>
