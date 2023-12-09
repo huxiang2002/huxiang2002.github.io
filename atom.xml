@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-12-03T02:28:21.871Z</updated>
+  <updated>2023-12-09T03:12:05.020Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bootstrap使用总结</title>
+    <link href="https://huxiang2002.github.io/2023/12/09/bootstrap-shi-yong-zong-jie/"/>
+    <id>https://huxiang2002.github.io/2023/12/09/bootstrap-shi-yong-zong-jie/</id>
+    <published>2023-12-09T01:23:53.000Z</published>
+    <updated>2023-12-09T03:12:05.020Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;bootstrap的下载和使用&quot;&gt;Bootstrap的下载和使用&lt;/h3&gt;
+&lt;p&gt;[中文官网] (https://v5.bootcss.com/)&lt;/p&gt;
+&lt;h4 id=&quot;下载&quot;&gt;下载&lt;/h4&gt;
+&lt;p&gt;下载：Bootstrap V5中文文档 → 进入中文文档 →</summary>
+        
+      
+    
+    
+    
+    <category term="JS" scheme="https://huxiang2002.github.io/categories/JS/"/>
+    
+    
+    <category term="前端" scheme="https://huxiang2002.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Bootstrap" scheme="https://huxiang2002.github.io/tags/Bootstrap/"/>
+    
+  </entry>
   
   <entry>
     <title>JS-web apis-操作元素内容和事件总结</title>

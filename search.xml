@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Bootstrap使用总结</title>
+      <link href="/2023/12/09/bootstrap-shi-yong-zong-jie/"/>
+      <url>/2023/12/09/bootstrap-shi-yong-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h3 id="bootstrap的下载和使用">Bootstrap的下载和使用</h3><p>[中文官网] (https://v5.bootcss.com/)</p><h4 id="下载">下载</h4><p>下载：Bootstrap V5中文文档 → 进入中文文档 → 下载 →下载 Bootstrap生产文件</p><p>平时使用下载生产文件就可以，想观看源码如何书写可以下载源码</p><h4 id="使用">使用</h4><ol type="1"><li>可以使用官网自带的CDN资源链接到本地项目里，没有网络或较差网络不能使用，且在VScode中使用<code>open in brower</code>没有JS效果，使用<code>open in live server</code>CSS，JS效果均无，可能是网络原因。</li><li>使用下载好的生产文件，需要将<code>bootstrap.min.css</code>和<code>bootstrap.min.js</code>复制到项目文件夹。也可以复制<code>bootstrap.css</code>和<code>bootstrap.js</code>区别是min的体积更小，压缩为一行。复制完成后需要使用直接link即可。</li></ol><h3 id="bootstrap内容">Bootstrap内容</h3><h4 id="布局">布局</h4><ol type="1"><li>Breakponits（断点），Bootstrap利用断点（Breakpoints）来确定响应式布局在设备或视口（viewport）大小变化时的行为，该宽度可自定义。该内容描绘了Bootstrap的几个视口宽度的范围。</li><li>Container（容器），<strong>.container</strong>类用于固定宽度并支持响应式布局的容器（版心居中）。<strong>.container-fluid</strong>类用于 100%宽度，占据全部视口（viewport）的容器。在官网有对应的表单观察区别 <a href="https://v5.bootcss.com/docs/layout/containers/" class="uri">https://v5.bootcss.com/docs/layout/containers/</a></li><li>grid（网格），可以实现在不同区域调用不同的类实现排列不同元素的效果，是将浏览器划分为12等分，调用<code>.col-sm-x</code>是指将一个元素看为x份。</li></ol><p>.........</p><p>具体内容在官网查看</p><h4 id="内容">内容</h4><ol type="1"><li>images（图片），通过 Bootstrap 所提供的 <code>.img-fluid</code>类让图片支持响应式布局。其原理是将 <code>max-width: 100%;</code> 和<code>height: auto;</code>赋予图片，以便随父元素的宽度变化一起缩放。</li><li>table（表格），Bootstrap5 通过 <code>.table</code>类来设置基础表格的样式，也可设置颜色，<code>:hover</code>属性......</li></ol><p>.........</p><p>具体内容在官网查看</p><h4 id="表单">表单</h4><p>提供各种表单样式：输入框，复选框，注册框.......</p><p>具体内容在官网查看</p><h4 id="组件">组件</h4><ol type="1"><li>Breadcrumb（面包屑导航）</li><li>Button（按钮）</li><li>Carousel（轮播图）</li><li>Navbar（导航栏）</li></ol><p>........</p><p>都是具有<code>js</code>和响应式效果的内容</p><h4 id="助手">助手</h4><ol type="1"><li>Clearfix（清除浮动），通过添加 clearfix工具类，可以快速轻松地清除容器中浮动的内容。</li><li>Color and background（颜色和背景）</li><li>Colored link（彩色链接），支持鼠标悬停状态的彩色链接。通过<code>.link-*</code> 类可以为链接着色。与 <a href="https://v5.bootcss.com/docs/utilities/colors/"><code>.text-*</code>类</a> 不同的是，这些类支持 <code>:hover</code> 和 <code>:focus</code>状态。</li><li>Position（定位），利用这些工具类快速设置元素的位置。</li></ol><h4 id="实用设施">实用设施</h4><ol type="1"><li>API，实用程序API是一个基于Sass的工具，用于生成实用程序类。Sass是一种类似Less的快捷编写Css样式的工具。</li><li>Display（属性），利用Bootstrap提供的 display工具类可以快速改变组件的 display属性等，并且支持响应式布局。还包括对一些常见值的支持，以及打印时用来控制display 属性的一些额外工具类。</li><li>Sizing（尺寸），利用宽度（width）和高度（height）相关的工具类来轻松实现对页面元素的高度和宽度的设定。你还可以使用工具类来设置相对于视口（viewport）的宽度和高度。</li><li>Verticalalignment（纵向对齐），轻松更改内联（inline）、内联块（inline-block）、内联表格（inline-table）以及表格单元（tablecell）元素的纵向对齐方式。</li><li>Visibility（可见性），使用可见性工具类可以设置 HTML 元素的<code>visibility</code> （可见性）。这些工具类完全不会修改<code>display</code> 属性的值，并且不影响布局（设置了<code>.invisible</code> 类的页面元素仍然会占据页面上的空间 ）</li></ol><p>..........</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> Bootstrap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JS-web apis-操作元素内容和事件总结</title>
       <link href="/2023/12/03/js-web-apis-cao-zuo-yuan-su-nei-rong-he-shi-jian-zong-jie/"/>
       <url>/2023/12/03/js-web-apis-cao-zuo-yuan-su-nei-rong-he-shi-jian-zong-jie/</url>
