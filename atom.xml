@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-12-09T03:15:04.876Z</updated>
+  <updated>2023-12-13T09:47:16.857Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dom事件进阶、Dom节点总结</title>
+    <link href="https://huxiang2002.github.io/2023/12/13/dom-shi-jian-jin-jie-dom-jie-dian-zong-jie/"/>
+    <id>https://huxiang2002.github.io/2023/12/13/dom-shi-jian-jin-jie-dom-jie-dian-zong-jie/</id>
+    <published>2023-12-13T07:43:43.000Z</published>
+    <updated>2023-12-13T09:47:16.857Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;事件流&quot;&gt;事件流&lt;/h3&gt;
+&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="JS" scheme="https://huxiang2002.github.io/categories/JS/"/>
+    
+    
+    <category term="前端" scheme="https://huxiang2002.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Js" scheme="https://huxiang2002.github.io/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>Bootstrap使用总结</title>
