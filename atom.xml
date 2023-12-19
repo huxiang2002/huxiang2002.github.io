@@ -6,7 +6,7 @@
   <link href="https://huxiang2002.github.io/atom.xml" rel="self"/>
   
   <link href="https://huxiang2002.github.io/"/>
-  <updated>2023-12-13T09:47:16.857Z</updated>
+  <updated>2023-12-19T11:01:37.900Z</updated>
   <id>https://huxiang2002.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bom操作以及正则表达式</title>
+    <link href="https://huxiang2002.github.io/2023/12/17/bom-cao-zuo-yi-ji-zheng-ze-biao-da-shi/"/>
+    <id>https://huxiang2002.github.io/2023/12/17/bom-cao-zuo-yi-ji-zheng-ze-biao-da-shi/</id>
+    <published>2023-12-17T12:52:46.000Z</published>
+    <updated>2023-12-19T11:01:37.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;window对象&quot;&gt;window对象&lt;/h3&gt;
+&lt;h4 id=&quot;bom浏览器对象模型&quot;&gt;&lt;code&gt;BOM&lt;/code&gt;(浏览器对象模型)&lt;/h4&gt;
+&lt;ol</summary>
+        
+      
+    
+    
+    
+    <category term="JS" scheme="https://huxiang2002.github.io/categories/JS/"/>
+    
+    
+    <category term="正则表达式" scheme="https://huxiang2002.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    <category term="Bom" scheme="https://huxiang2002.github.io/tags/Bom/"/>
+    
+  </entry>
   
   <entry>
     <title>Dom事件进阶、Dom节点总结</title>
