@@ -4,32 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="MySql---函数,约束,多表查询,事务总结, Algorithmic library">
-    <meta name="description" content="一、函数
-(1)字符串函数：
-
-
-
-
-
-
-
-函数
-功能
-
-
-
-
-concat(S1,S2,...Sn)
-字符串拼接，将S1，S2，... Sn拼接成一个字符串
-
-
-lower(str)
-将字符串str全部转为小写
-
-
-upper(str)
-">
+    <meta name="keywords" content="springboot自动配置原理和自定义starter, Algorithmic library">
+    <meta name="description" content="springboot
+自动配置原理
+SpringBoot的自动配置就是当spring容器启动后，一些配置类、bean对象就自动存入到了IOC容器中，不需要我们手动去声明，从而简化了开发，省去了繁琐的配置操作
+研究springboot原理就是">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -41,7 +20,7 @@ upper(str)
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MySql---函数,约束,多表查询,事务总结 | Algorithmic library</title>
+    <title>springboot自动配置原理和自定义starter | Algorithmic library</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -473,12 +452,12 @@ mjx-container[display="true"] + br {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">MySql---函数,约束,多表查询,事务总结</h1>
+                    <h1 class="description center-align post-title">springboot自动配置原理和自定义starter</h1>
                 </div>
             </div>
         </div>
@@ -502,12 +481,8 @@ mjx-container[display="true"] + br {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/mysql/">
-                                <span class="chip bg-color">mysql</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BA%A6%E6%9D%9F%EF%BC%8C%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%8C%E4%BA%8B%E5%8A%A1%E6%80%BB%E7%BB%93/">
-                                <span class="chip bg-color">函数，约束，多表查询，事务总结</span>
+                            <a href="/tags/springboot/">
+                                <span class="chip bg-color">springboot</span>
                             </a>
                         
                     </div>
@@ -518,8 +493,8 @@ mjx-container[display="true"] + br {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                数据库
+                            <a href="/categories/springboot/" class="post-category">
+                                springboot
                             </a>
                         
                     </div>
@@ -531,7 +506,7 @@ mjx-container[display="true"] + br {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-10-17
+                    2024-02-17
                 </div>
                 
 
@@ -555,418 +530,144 @@ mjx-container[display="true"] + br {
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一函数">一、函数</h3>
-<p>(1)字符串函数：</p>
-<table>
-<colgroup>
-<col style="width: 56%">
-<col style="width: 43%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>函数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>concat(S1,S2,...Sn)</td>
-<td>字符串拼接，将S1，S2，... Sn拼接成一个字符串</td>
-</tr>
-<tr class="even">
-<td>lower(str)</td>
-<td>将字符串str全部转为小写</td>
-</tr>
-<tr class="odd">
-<td>upper(str)</td>
-<td>将字符串str全部转为大写</td>
-</tr>
-<tr class="even">
-<td>lpad(str,n,pad)</td>
-<td>左填充，用字符串pad对str的左边进行填充，达到n个字符串长度</td>
-</tr>
-<tr class="odd">
-<td>rpad(str,n,pad)</td>
-<td>右填充，用字符串pad对str的右边进行填充，达到n个字符串长度</td>
-</tr>
-<tr class="even">
-<td>trim(str)</td>
-<td>去掉字符串头部和尾部的空格</td>
-</tr>
-<tr class="odd">
-<td>substring(str,start,len)</td>
-<td>返回从字符串str从start位置起的len个长度的字符串</td>
-</tr>
-</tbody>
-</table>
-<p>(2)数值函数:</p>
-<table>
-<thead>
-<tr class="header">
-<th>函数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ceil(x)</td>
-<td>向上取整</td>
-</tr>
-<tr class="even">
-<td>floor(x)</td>
-<td>向下取整</td>
-</tr>
-<tr class="odd">
-<td>mod(x,y)</td>
-<td>返回x/y的模</td>
-</tr>
-<tr class="even">
-<td>rand()</td>
-<td>返回0~1内的随机数</td>
-</tr>
-<tr class="odd">
-<td>round(x,y)</td>
-<td>求参数x的四舍五入的值，保留y位小数</td>
-</tr>
-</tbody>
-</table>
-<p>(3)日期函数:</p>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>函数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>curdate()</td>
-<td>返回当前日期</td>
-</tr>
-<tr class="even">
-<td>curtimr()</td>
-<td>返回当前时间</td>
-</tr>
-<tr class="odd">
-<td>now()</td>
-<td>返回当前日期和时间</td>
-</tr>
-<tr class="even">
-<td>year(date)</td>
-<td>获取指定date的年份</td>
-</tr>
-<tr class="odd">
-<td>mouth(date)</td>
-<td>获取指定date的月份</td>
-</tr>
-<tr class="even">
-<td>day(date)</td>
-<td>获取指定date的日期</td>
-</tr>
-<tr class="odd">
-<td>date_add(date,interval,exprtype)</td>
-<td>返回一个日期/时间值加上一个时间间隔expr后的时间值</td>
-</tr>
-<tr class="even">
-<td>datediff</td>
-<td>返回起始时间date1 和 结束时间date2之间的天数</td>
-</tr>
-</tbody>
-</table>
-<p>(4)流程函数:</p>
-<table>
-<colgroup>
-<col style="width: 55%">
-<col style="width: 45%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>函数</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>if(value,t,f)</td>
-<td>如果value为true，则返回t，否则返回f</td>
-</tr>
-<tr class="even">
-<td>ifnull(value1 , value2)</td>
-<td>如果value1不为空，返回value1，否则返回value2</td>
-</tr>
-<tr class="odd">
-<td>case where [ vall ] then [ res1 ]...else [ default ] end</td>
-<td>如果val1为true，返回res1，... 否则返回default默认值</td>
-</tr>
-<tr class="even">
-<td>case [ expr ] where [ vall ] then [ res1 ]...else [ default ]
-end</td>
-<td>如果expr的值等于val1，返回res1，... 否则返回default默认值</td>
-</tr>
-</tbody>
-</table>
-<h3 id="二约束">二、约束</h3>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 36%">
-<col style="width: 31%">
-<col style="width: 31%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>约束</th>
-<th>描述</th>
-<th>关键字</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>非空约束</td>
-<td>限制该字段的数据不能为null</td>
-<td>not null</td>
-</tr>
-<tr class="even">
-<td>唯一约束</td>
-<td>保证该字段的所有数据都是唯一、不重复的</td>
-<td>unique</td>
-</tr>
-<tr class="odd">
-<td>主键约束</td>
-<td>主键是一行数据的唯一标识，要求非空且唯一</td>
-<td>primary key</td>
-</tr>
-<tr class="even">
-<td>默认约束</td>
-<td>保存数据时，如果未指定该字段的值，则采用默认值</td>
-<td>default</td>
-</tr>
-<tr class="odd">
-<td>检查约束</td>
-<td>保证字段值满足某一个条件</td>
-<td>check</td>
-</tr>
-<tr class="even">
-<td>外键约束</td>
-<td>用来让两张表的数据之间建立连接，保证数据的一致性和完整性</td>
-<td>foreign key</td>
-</tr>
-</tbody>
-</table>
-<h4 id="语法">语法：</h4>
-<ul>
-<li>创建表时： create table 表名( 字段名 数据类型, ... [ constraint ] [
-外键名称 ] foreign key (外键字段名) references 主表 (主表列名) )</li>
-<li>修改表时：alter table 表名 add constraint 外键名称 foreign key
-(外键字段名) references 主表 (主表列名)</li>
-<li>删除外键：alter table 表名 drop foreign key 外键名称</li>
-</ul>
-<h4 id="删除更新行为">删除/更新行为：</h4>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>行为</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>no action</td>
-<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。
-(与 restrict 一致) 默认行为</td>
-</tr>
-<tr class="even">
-<td>restrict</td>
-<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。
-(与 no action 一致) 默认行为</td>
-</tr>
-<tr class="odd">
-<td>cascade</td>
-<td>当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有，则也删除/更新外键在子表中的记录。</td>
-</tr>
-<tr class="even">
-<td>set null</td>
-<td>当在父表中删除对应记录时，首先检查该记录是否有对应外键，如果有则设置子表中该外键值为null（这就要求该外键允许取null）。</td>
-</tr>
-<tr class="odd">
-<td>set default</td>
-<td>父表有变更时，子表将外键列设置成一个默认的值 (innodb不支持)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="具体语法">具体语法：</h4>
-<ul>
-<li>alter table 表名 add constraint 外键名称 foreign key (外键字段名)
-references 主表 (主表列名) on update cascade on delete cascade;</li>
-</ul>
-<h3 id="三多表查询">三、多表查询</h3>
-<h4 id="分类">分类：</h4>
-<ul>
-<li>连接查询
-<ul>
-<li>内连接：相当于查询A、B交集部分数据</li>
-<li>外连接：
-<ul>
-<li>左外连接：查询左表所有数据，以及两张表交集部分数据</li>
-<li>右外连接：查询右表所有数据，以及两张表交集部分数据</li>
-<li>自连接：当前表与自身的连接查询，自连接必须使用表别名</li>
-</ul></li>
-</ul></li>
-<li>子查询</li>
-</ul>
-<p>(1)内连接:</p>
-<ul>
-<li>隐式内连接：select 字段列表 from 表1,表2 where 条件 ...</li>
-<li>显式内连接：select 字段列表 from 表1 [ inner ] join 表2 on
-连接条件...;
-&gt;注意事项:一旦为表起了别名，就不能再使用表名来指定对应的字段了，此时只能够使用别名来指定字段。</li>
-</ul>
-<p>(2)外连接：</p>
-<ul>
-<li>左外连接：select 字段列表 from 表1 left [ outer ] join 表2 on
-条件...;
-&gt;左外连接相当于查询表1(左表)的所有数据，当然也包含表1和表2交集部分的数据。</li>
-<li>右外连接：select 字段列表 from 表1 right [ outer ] join 表2 on
-条件...;
-&gt;右外连接相当于查询表2(右表)的所有数据，当然也包含表1和表2交集部分的数据</li>
-</ul>
+                <h3 id="springboot-自动配置原理"><code>springboot</code>
+自动配置原理</h3>
+<p><code>SpringBoot</code>的自动配置就是当<code>spring</code>容器启动后，一些配置类、<code>bean</code>对象就自动存入到了<code>IOC</code>容器中，不需要我们手动去声明，从而简化了开发，省去了繁琐的配置操作</p>
+<p>研究<code>springboot</code>原理就是研究在<code>springboot</code>项目中我们引入<code>maven</code>依赖后，是如何将依赖<code>jar</code>包中所定义的配置类，以及<code>bean</code>加载到<code>spring</code>的<code>IOC</code>容器当中。</p>
+<p>先在<code>pom.xml</code>中引入对应的坐标，重新加载<code>maven</code>,如下自定义了一个模块，通过<code>maven</code>将其引入到当前模块中。</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>itheima-utils<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>0.0.1-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在测试方法中判断是否能够获取在<code>itheima-utils</code>模块中声明的<code>bean</code>。利用<code>applicationContext</code>的<code>getBean</code>方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">ApplicationContext</span> applicationContext<span class="token punctuation">;</span> <span class="token comment">//IOC容器对象</span>
+
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testBean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>applicationContext<span class="token punctuation">.</span><span class="token function">getBean</span><span class="token punctuation">(</span><span class="token class-name">TokenParser</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>注意事项：
-左外连接和右外连接是可以相互替换的，只需要调整在连接查询时SQL中，表结构的先后顺序就可以了。而我们在日常开发使用时，更偏向于左外连接。</p>
+<p>报错不能找到<code>com.example</code>。解决方法：点开<code>Maven</code>的<code>itheima-utils</code>双击生命周期，双击<code>install</code>，重新加载。</p>
 </blockquote>
-<p>(3)自连接：<br>
-自连接查询，顾名思义，就是自己连接自己，也就是把一张表连接查询多次。</p>
-<ul>
-<li>select 字段列表 from 表a 别名a join 表a 别名b on 条件...;
-&gt;注意事项:
-在自连接查询中，必须要为表起别名，要不然我们不清楚所指定的条件、返回的字段，到底是哪一张表的字段。</li>
-</ul>
-<p>(4)联合查询：<br>
-对于union查询，就是把多次查询的结果合并起来，形成一个新的查询结果集。</p>
-<ul>
-<li>selete 字段列表 from 表A ... union [ all ] selete 字段列表 from
-表B...
-&gt;对于联合查询的多张表的列数必须保持一致，字段类型也需要保持一致。
-&gt;union all 会将全部的数据直接合并在一起，union
-会对合并之后的数据去重。</li>
-</ul>
-<p>(5)子查询<br>
-SQL语句中嵌套SELECT语句，称为嵌套查询，又称子查询。</p>
-<h4 id="标量子查询子查询结果为单个值">标量子查询（子查询结果为单个值）：</h4>
-<p>子查询返回的结果是单个值（数字、字符串、日期等）。(如：select id from
-dept where name = '销售部';)</p>
-<h4 id="列子查询子查询结果为一列">列子查询(子查询结果为一列)：</h4>
-<p>常用的操作符：in 、not in 、 any 、some 、 all</p>
-<table>
-<thead>
-<tr class="header">
-<th>操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>in</td>
-<td>在指定的集合范围之内，多选一</td>
-</tr>
-<tr class="even">
-<td>not in</td>
-<td>不在指定的集合范围之内</td>
-</tr>
-<tr class="odd">
-<td>any</td>
-<td>子查询返回列表中，有任意一个满足即可</td>
-</tr>
-<tr class="even">
-<td>some</td>
-<td>与any等同，使用some的地方都可以使用any</td>
-</tr>
-<tr class="odd">
-<td>all</td>
-<td>子查询返回列表的所有值都必须满足</td>
-</tr>
-</tbody>
-</table>
-<h4 id="行子查询子查询结果为一行">行子查询(子查询结果为一行)：</h4>
-<p>子查询返回的结果是一行（可以是多列），这种子查询称为行子查询。<br>
-常用的操作符：= 、&lt;&gt; 、in 、not in</p>
-<h4 id="表子查询子查询结果为多行多列">表子查询(子查询结果为多行多列):</h4>
-<p>子查询返回的结果是多行多列，这种子查询称为表子查询。<br>
-常用的操作符:in</p>
+<p>发现并不能获取到在<code>itheima-utils</code>模块中<code>TokenParser</code>类中通过<code>@Component</code>注解声明的<code>bean</code>对象。这是因为在当前测试类中的启动方法上的<code>@SpringBootApplication</code>只能扫描到当前包及其子包。有如下两种方案解决：</p>
+<p>方案一·：</p>
+<p><code>@ComponentScan</code> 组件扫描</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@ComponentScan</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"com.itheima"</span><span class="token punctuation">,</span><span class="token string">"com.example"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@SpringBootApplication</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SpringbootWebConfig2Application</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">SpringApplication</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token class-name">SpringbootWebConfig2Application</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这种方法较为繁琐，因为每次获取到依赖<code>jar</code>包中所定义的配置类，以及<code>bean</code>，都需要配置扫描的包名</p>
+<p>方法二：</p>
+<p><code>@Import</code>
+导入。使用<code>@Import</code>导入的类会被<code>Spring</code>加载到<code>IOC</code>容器中，导入形式主要有以下几种:</p>
+<p>1.导入 普通类</p>
+<pre class="line-numbers language-none"><code class="language-none">@Import({TokenParser.class})<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>TokenParser</code>为JAR包的普通类</p>
+<p>2.导入 配置类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Import</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token class-name">HeaderConfig</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HeaderConfig</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">HeaderParser</span> <span class="token function">headerParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">HeaderParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">HeaderGenerator</span> <span class="token function">headerGenerator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">HeaderGenerator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>根据子查询位置，分为：<br>
-A. where之后<br>
-B. from之后<br>
-C. select之后</p>
+<p>如果要管理的bean对象来自于第三方（不是自定义的），是无法用 <span class="citation" data-cites="Component">@Component</span>
+及衍生注解声明bean的，就需要用到 <span class="citation" data-cites="Bean注解">@Bean注解</span>。</p>
+<p>若要管理的第三方bean对象，建议对这些bean进行集中分类配置，可以通过
+<span class="citation" data-cites="Configuration">@Configuration</span>
+注解声明一个配置类。</p>
+<p>通过@Bean注解的name或value属性可以声明bean的名称，如果不指定，默认bean的名称就是方法名。</p>
+<p>如果第三方bean需要依赖其它bean对象，直接在bean定义方法中设置形参即可，容器会根据类型自动装配</p>
 </blockquote>
-<h3 id="四事务">四、事务：</h3>
-<p>事务
-是一组操作的集合，它是一个不可分割的工作单位，事务会把所有的操作作为一个整体一起向系统提交或撤销操作请求，即这些操作要么同时成功，要么同时失败。</p>
-<p>控制事务一: * 查看事务提交方式 ：selete @<span class="citation" data-cites="autocommit">@autocommit</span> ; * 设置事务提交方式 : set
-@<span class="citation" data-cites="autocommit">@autocommit</span> = 0
-;(1是自动，0是手动) * 提交事务：commit; * 回滚事务:rollback;
-&gt;注意：上述的这种方式，我们是修改了事务的自动提交行为,
-把默认的自动提交修改为了手动提交, 此时我们执行的DML语句都不会提交,
-需要手动的执行commit进行提交。</p>
-<p>控制事务二: * 开启事务：start transaction 或 begin * 提交事务：commit
-* 回滚事务：rollback</p>
-<h4 id="事务四大特性">事务四大特性</h4>
-<ul>
-<li>原子性（Atomicity）：事务是不可分割的最小操作单元，要么全部成功，要么全部失败。</li>
-<li>一致性（Consistency）：事务完成时，必须使所有的数据都保持一致状态。</li>
-<li>隔离性（Isolation）：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行。</li>
-<li>持久性（Durability）：事务一旦提交或回滚，它对数据库中的数据的改变就是永久的。</li>
-</ul>
-<h4 id="事务隔离级别">事务隔离级别</h4>
-<table>
-<thead>
-<tr class="header">
-<th>隔离级别</th>
-<th>脏读</th>
-<th>不可重复读</th>
-<th>幻读</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Read uncommitted</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr class="even">
-<td>Read committed</td>
-<td>×</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr class="odd">
-<td>Repeatable Read(默认)</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-</tr>
-<tr class="even">
-<td>Serializable</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>查看事务隔离级别：selete @<span class="citation" data-cites="transaction_isolation">@transaction_isolation</span></li>
-<li>设置事务隔离级别：set [ session ] [ global] transaction isolation
-level 隔离级别
-&gt;注意：事务隔离级别越高，数据越安全，但是性能越低。</li>
-</ul>
+<p>3.导入 <code>ImportSelector</code> 接口实现类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Import</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token class-name">MyImportSelector</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyImportSelector</span> <span class="token keyword">implements</span> <span class="token class-name">ImportSelector</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">selectImports</span><span class="token punctuation">(</span><span class="token class-name">AnnotationMetadata</span> importingClassMetadata<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token string">"com.example.HeaderConfig"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>4.在第三方JAR包中实现<code>@EnableHeaderConfig</code>注解</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Retention</span><span class="token punctuation">(</span><span class="token class-name">RetentionPolicy</span><span class="token punctuation">.</span><span class="token constant">RUNTIME</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Target</span><span class="token punctuation">(</span><span class="token class-name">ElementType</span><span class="token punctuation">.</span><span class="token constant">TYPE</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Import</span><span class="token punctuation">(</span><span class="token class-name">MyImportSelector</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token annotation punctuation">@interface</span> <span class="token class-name">EnableHeaderConfig</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用时只需要让启动类上加上<code>@EnableHeaderConfig</code></p>
+<h3 id="自定义starter">自定义starter</h3>
+<p>实际开发中，经常会定义一些公共组件，提供给各个项目团队使用。而在<code>SpringBoot</code>的项目中，一般会将这些公共组件封装为<code>SpringBoot</code>
+的 <code>starter</code></p>
+<p>步骤：</p>
+<p>1.创建 <code>aliyun-oss-spring-boot-starter</code> 模块</p>
+<p>starter不需要任何的JAVA代码只需要引入<code>autoconfigure</code>的Maven依赖</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
+			<span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>com<span class="token punctuation">.</span>aliyun<span class="token punctuation">.</span>oss<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+			<span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>aliyun<span class="token operator">-</span>oss<span class="token operator">-</span>spring<span class="token operator">-</span>boot<span class="token operator">-</span>autoconfigure<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+			<span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">0.0</span><span class="token number">.1</span><span class="token operator">-</span><span class="token constant">SNAPSHOT</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2.创建 <code>aliyun-oss-spring-boot-autoconfigure</code> 模块</p>
+<p>先实现一个<code>POJO</code>类定义,如本例的<code>AliOSSProperties</code>,提供对应的GET，SETTER方法，并加上<code>@ConfigurationProperties(prefix = "aliyun.oss")</code>,以便后续在yml文件中配置属性信息。</p>
+<p>在实现一个工具类，完成静态方法的封装：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AliOSSUtils</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name">AliOSSProperties</span> aliOSSProperties<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">AliOSSProperties</span> <span class="token function">getAliOSSProperties</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> aliOSSProperties<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setAliOSSProperties</span><span class="token punctuation">(</span><span class="token class-name">AliOSSProperties</span> aliOSSProperties<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>aliOSSProperties <span class="token operator">=</span> aliOSSProperties<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 实现上传图片到OSS
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">upload</span><span class="token punctuation">(</span><span class="token class-name">MultipartFile</span> file<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token comment">//获取阿里云OSS参数</span>
+        <span class="token class-name">String</span> endpoint <span class="token operator">=</span> aliOSSProperties<span class="token punctuation">.</span><span class="token function">getEndpoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> accessKeyId <span class="token operator">=</span> aliOSSProperties<span class="token punctuation">.</span><span class="token function">getAccessKeyId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> accessKeySecret <span class="token operator">=</span> aliOSSProperties<span class="token punctuation">.</span><span class="token function">getAccessKeySecret</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> bucketName <span class="token operator">=</span> aliOSSProperties<span class="token punctuation">.</span><span class="token function">getBucketName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 获取上传的文件的输入流</span>
+        <span class="token class-name">InputStream</span> inputStream <span class="token operator">=</span> file<span class="token punctuation">.</span><span class="token function">getInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 避免文件覆盖</span>
+        <span class="token class-name">String</span> originalFilename <span class="token operator">=</span> file<span class="token punctuation">.</span><span class="token function">getOriginalFilename</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> fileName <span class="token operator">=</span> <span class="token constant">UUID</span><span class="token punctuation">.</span><span class="token function">randomUUID</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> originalFilename<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>originalFilename<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//上传文件到 OSS</span>
+        <span class="token class-name">OSS</span> ossClient <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OSSClientBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">,</span> accessKeyId<span class="token punctuation">,</span> accessKeySecret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ossClient<span class="token punctuation">.</span><span class="token function">putObject</span><span class="token punctuation">(</span>bucketName<span class="token punctuation">,</span> fileName<span class="token punctuation">,</span> inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//文件访问路径</span>
+        <span class="token class-name">String</span> url <span class="token operator">=</span> endpoint<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"//"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">"//"</span> <span class="token operator">+</span> bucketName <span class="token operator">+</span> <span class="token string">"."</span> <span class="token operator">+</span> endpoint<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"//"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">"/"</span> <span class="token operator">+</span> fileName<span class="token punctuation">;</span>
+        <span class="token comment">// 关闭ossClient</span>
+        ossClient<span class="token punctuation">.</span><span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> url<span class="token punctuation">;</span><span class="token comment">// 把上传到oss的路径返回</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在实现自动配置类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
+<span class="token annotation punctuation">@EnableConfigurationProperties</span><span class="token punctuation">(</span><span class="token class-name">AliOSSProperties</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AliOSSAutoConfiguration</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">AliOSSUtils</span> <span class="token function">aliOSSUtils</span><span class="token punctuation">(</span><span class="token class-name">AliOSSProperties</span> aliOSSProperties<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 如果第三方bean需要依赖其它bean对象，直接在bean定义方法中设置形参即可，容器会根据类型自动装配</span>
+        <span class="token class-name">AliOSSUtils</span> aliOSSUtils <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AliOSSUtils</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        aliOSSUtils<span class="token punctuation">.</span><span class="token function">setAliOSSProperties</span><span class="token punctuation">(</span>aliOSSProperties<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> aliOSSUtils<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>3.在 <code>aliyun-oss-spring-boot-autoconfigure</code>
+模块中自定义自动配置功能，并定义<code>resources</code>下的<code>META-INF</code>下的<code>spring</code>目录的<code>org.springframework.boot.autoconfigure.AutoConfiguration.imports</code></p>
+<p>在该文件下的全类名类会被Spring加载到<code>IOC</code>容器中</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">com.aliyun.oss.AliOSSAutoConfiguration<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样在使用中只需要引入starter,在yml文件中配置所需要的信息即可</p>
 
                 
             </div>
@@ -993,7 +694,7 @@ level 隔离级别
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://huxiang2002.GitHub.io/2023/10/17/mysql-han-shu-yue-shu-duo-biao-cha-xun-shi-wu-zong-jie/">https://huxiang2002.GitHub.io/2023/10/17/mysql-han-shu-yue-shu-duo-biao-cha-xun-shi-wu-zong-jie/</a>
+                    <a href="https://huxiang2002.GitHub.io/2024/02/17/springboot-zi-dong-pei-zhi-yuan-li-he-zi-ding-yi-starter/">https://huxiang2002.GitHub.io/2024/02/17/springboot-zi-dong-pei-zhi-yuan-li-he-zi-ding-yi-starter/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1031,12 +732,8 @@ level 隔离级别
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/mysql/">
-                                    <span class="chip bg-color">mysql</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%87%BD%E6%95%B0%EF%BC%8C%E7%BA%A6%E6%9D%9F%EF%BC%8C%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%8C%E4%BA%8B%E5%8A%A1%E6%80%BB%E7%BB%93/">
-                                    <span class="chip bg-color">函数，约束，多表查询，事务总结</span>
+                                <a href="/tags/springboot/">
+                                    <span class="chip bg-color">springboot</span>
                                 </a>
                             
                         </div>
@@ -1115,17 +812,18 @@ level 隔离级别
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/12/02/mysql-cun-chu-yin-qing-he-suo-yin-zong-jie/">
+                <a href="/2024/02/17/springboot-zi-dong-pei-zhi-yuan-li-he-zi-ding-yi-starter/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="MySql-存储引擎和索引总结">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="springboot自动配置原理和自定义starter">
                         
-                        <span class="card-title">MySql-存储引擎和索引总结</span>
+                        <span class="card-title">springboot自动配置原理和自定义starter</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1135,34 +833,27 @@ level 隔离级别
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                            <a href="/categories/springboot/" class="post-category">
+                                    springboot
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql/">
-                        <span class="chip bg-color">mysql</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/">
-                        <span class="chip bg-color">存储引擎</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%B4%A2%E5%BC%95/">
-                        <span class="chip bg-color">索引</span>
+                    <a href="/tags/springboot/">
+                        <span class="chip bg-color">springboot</span>
                     </a>
                     
                 </div>
@@ -1176,13 +867,13 @@ level 隔离级别
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/10/06/mysql-ddl-dml-dql-dcl-yu-ju-zong-jie/">
+                <a href="/2023/12/17/bom-cao-zuo-yi-ji-zheng-ze-biao-da-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="MySql DDL、DML、DQL、DCL语句总结">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Bom操作以及正则表达式">
                         
-                        <span class="card-title">MySql DDL、DML、DQL、DCL语句总结</span>
+                        <span class="card-title">Bom操作以及正则表达式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1193,14 +884,14 @@ level 隔离级别
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                            <a href="/categories/JS/" class="post-category">
+                                    JS
                                 </a>
                             
                             
@@ -1210,12 +901,12 @@ level 隔离级别
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql/">
-                        <span class="chip bg-color">mysql</span>
+                    <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                        <span class="chip bg-color">正则表达式</span>
                     </a>
                     
-                    <a href="/tags/DDL%E3%80%81DML%E3%80%81DQL%E3%80%81DCL/">
-                        <span class="chip bg-color">DDL、DML、DQL、DCL</span>
+                    <a href="/tags/Bom/">
+                        <span class="chip bg-color">Bom</span>
                     </a>
                     
                 </div>
